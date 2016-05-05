@@ -1,0 +1,62 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Hardin and Rocke}{Hardin and
+  Rocke}{2012}]{hardin2012distribution}
+Hardin, J. and D.~M. Rocke (2012).
+\newblock The distribution of robust distances.
+\newblock {\em Journal of Computational and Graphical Statistics\/}.
+
+\bibitem[\protect\citeauthoryear{Hubert, Rousseeuw, and Van~Aelst}{Hubert
+  et~al.}{2008}]{hubert2008high}
+Hubert, M., P.~J. Rousseeuw, and S.~Van~Aelst (2008).
+\newblock High-breakdown robust multivariate methods.
+\newblock {\em Statistical Science\/}, 92--119.
+
+\bibitem[\protect\citeauthoryear{Maronna and Zamar}{Maronna and
+  Zamar}{2002}]{maronna2002robust}
+Maronna, R.~A. and R.~H. Zamar (2002).
+\newblock Robust estimates of location and dispersion for high-dimensional
+  datasets.
+\newblock {\em Technometrics\/}, 307--317.
+
+\bibitem[\protect\citeauthoryear{Rousseeuw and Driessen}{Rousseeuw and
+  Driessen}{1999}]{rousseeuw1999fast}
+Rousseeuw, P.~J. and K.~V. Driessen (1999).
+\newblock A fast algorithm for the minimum covariance determinant estimator.
+\newblock {\em Technometrics\/}~{\em 41\/}(3), 212--223.
+
+\bibitem[\protect\citeauthoryear{Shi and Horvath}{Shi and
+  Horvath}{2012}]{shi2012unsupervised}
+Shi, T. and S.~Horvath (2012).
+\newblock Unsupervised learning with random forest predictors.
+\newblock {\em Journal of Computational and Graphical Statistics\/}.
+
+\bibitem[\protect\citeauthoryear{Swayne, Lang, Buja, and Cook}{Swayne
+  et~al.}{2003}]{swayne2003ggobi}
+Swayne, D.~F., D.~T. Lang, A.~Buja, and D.~Cook (2003).
+\newblock Ggobi: evolving from xgobi into an extensible framework for
+  interactive data visualization.
+\newblock {\em Computational Statistics \& Data Analysis\/}~{\em 43\/}(4),
+  423--444.
+
+\bibitem[\protect\citeauthoryear{Valero-Mora and Ledesma}{Valero-Mora and
+  Ledesma}{2011}]{valero2011using}
+Valero-Mora, P.~M. and R.~D. Ledesma (2011).
+\newblock Using interactive graphics to teach multivariate data analysis to
+  psychology students.
+\newblock {\em Journal of Statistics Education\/}~{\em 19\/}(1), 1--19.
+
+\bibitem[\protect\citeauthoryear{Van~der Maaten and Hinton}{Van~der Maaten and
+  Hinton}{2008}]{van2008visualizing}
+Van~der Maaten, L. and G.~Hinton (2008).
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 9\/}(2579-2605),
+  85.
+
+\bibitem[\protect\citeauthoryear{Van Der~Maaten, Postma, and Van~den Herik}{Van
+  Der~Maaten et~al.}{2009}]{van2009dimensionality}
+Van Der~Maaten, L., E.~Postma, and J.~Van~den Herik (2009).
+\newblock Dimensionality reduction: a comparative.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 10}, 66--71.
+
+\end{thebibliography}

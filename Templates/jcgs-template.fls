@@ -1,0 +1,78 @@
+PWD C:/Users/iakuznet/Desktop/JovoPaper
+INPUT C:/Users/iakuznet/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/latex.fmt
+INPUT jcgs-template.tex
+OUTPUT jcgs-template.log
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/dvips.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/dvips.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psfrag/psfrag.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psfrag/psfrag.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/epsf/epsf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/epsf/epsf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/enumerate.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/enumerate.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/natbib/natbib.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/natbib/natbib.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT jcgs-template.aux
+INPUT jcgs-template.aux
+OUTPUT jcgs-template.aux
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
+OUTPUT jcgs-template.dvi
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT jcgs-template.bbl
+INPUT jcgs-template.bbl
+INPUT jcgs-template.aux

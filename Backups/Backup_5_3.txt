@@ -1,0 +1,150 @@
+%&latex
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx,psfrag,epsf}
+\usepackage{enumerate}
+\usepackage{natbib}
+\usepackage{url} % not crucial - just used below for the URL 
+
+%\pdfminorversion=4
+% NOTE: To produce blinded version, replace "0" with "1" below.
+\newcommand{\blind}{0}
+
+% DON'T change margins - should be 1 inch all around.
+\addtolength{\oddsidemargin}{-.5in}%
+\addtolength{\evensidemargin}{-.5in}%
+\addtolength{\textwidth}{1in}%
+\addtolength{\textheight}{1.3in}%
+\addtolength{\topmargin}{-.8in}%
+
+
+\begin{document}
+
+%\bibliographystyle{natbib}
+
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+\setlength{\parindent}{5ex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\if0\blind
+{
+  \title{\bf Matrix Explorer: A Web Application for Data Exploration}
+  \author{Ivan A. Kuznetsov\thanks{
+    The authors gratefully acknowledge \textit{please remember to list all relevant funding sources in the unblinded version}}\hspace{.2cm} and 
+    Joshua T. Vogelstein \\
+    Department of Biomedical Engineering, The Johns Hopkins\\
+    University, Baltimore, Maryland 21218, USA}
+  \maketitle
+} \fi
+
+\if1\blind
+{
+  \bigskip
+  \bigskip
+  \bigskip
+  \begin{center}
+    {\LARGE\bf Title}
+\end{center}
+  \medskip
+} \fi
+
+\bigskip
+\begin{abstract}
+\noindent Exploration and visualization of structured data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, oftentimes basic researchers lack the statistical knowledge to analyze their data. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to upload and explore small to medium sized structured datasets (where rows are subjects and columns are features, as in a csv file). The current tool is optimized for files of size less than 1 Gb. Within Matrix Explorer we have implemented some very basic techniques which we believe are relevant to any sort of data analyses: (i) data reordering, sorting, and searching; (ii) data visualization via heatmap , scatter/box/violin plots, marginal distributions, and 2D embedding; (iii) data exploration via k-means clustering, dendrogram, correlation and covariance matrix computation, and outlier detection. 
+\end{abstract}
+
+\noindent%
+{\it Keywords:}  3 to 6 keywords, that do not appear in the title
+\vfill
+
+\newpage
+\spacingset{1.45} % DON'T change the spacing!
+\section{Introduction}
+\label{sec:intro}
+
+The past decade has seen an explosion in scientists' ability to collect huge quantities of data and a simultaneous growth in the necessary computational power and statistical framework to process said data. Unfortunately, despite a multitude of attempts [CITE], exploratory analysis of novel datasets remains more of an art than an exact science, requiring a thorough understanding of statistical science to perform properly. The result of this phenomenon is that the a large quantity of collected data, especially in the basic sciences, is rather poorly analyzed, undoubtedly decreasing the pace of new discoveries.
+
+What is then required is a framework within which users with minimal statistical knowledge can explore their data. To the best to of our knowledge, such a tool does not yet exist. The R, MATLAB, and Python languages and associated toolboxes and packages still require users to have a non-negligable understanding of underlying methods in order to conduct proper data analysis. Other attempts... [CITE].
+
+In this paper we describe Matrix Explorer (MX), a novel data exploration web application built via the R Shiny package. Within MX we have included the techniques which we deem nest practice whenever starting a new exploratory analysis task. MX provides users with minimal knowledge of statistics the tools necessary to conduct a basic characterization of their data.
+
+\section{Methods}
+\label{sec:meth}
+
+MX is implemented via the R Shiny package, which allows for the construction of interactive web applications which use R as their backend. The Shiny server is hosted on a Docker instance. The functionality of MX is divided into several different submodules, organized as tabs in the web application, which are described in depth below.
+
+\subsection{Data Upload \& Selection}
+\label{SubSecUpload}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=3in,natwidth=610]{fig1.pdf}
+		\caption{The initial screen shown to MX users. Users are prompted to upload a csv file and given several data formating options.\label{fig:FigUpload}}
+	\end{center}
+\end{figure}
+
+Upon loading the application, the user is first prompted to upload a dataset, as shown in Figure~\ref{fig:FigUpload}. The current implementation accepts comma separated variable files and is optimized for sizes below 1 gigabyte.
+
+
+\subsection{Heatmap \& Dendrogram}
+\label{SubSecHeatmap}
+
+A heatmap provides the most direct way of visualizing the data, besides simple looking at it as a data table. However, oftentimes clear trends in the data are obscured on a heatmap because of varying ranges amongst features. Normalization resolves this issue.
+MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary.
+
+
+\subsection{Sample Summary}
+\label{SubSecSample}
+
+
+\subsection{Outliers}
+\label{SubSecOutliers}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=3in,natwidth=610]{fig1.pdf}
+		\caption{Users are shown the computed robust Mahalnobis distances and allowed to choose a alpha cut-off value to potentially reject samples as outliers.\label{fig:FigOutliers}}
+	\end{center}
+\end{figure}
+
+In order to determine outliers it is necessary to first establish a distance metric to determine how far away a specific sample is from other samples. In this case, robust Mahalanobis distances were used, as described in \cite{hubert2008high}. Briefly, a robust estimate of the sample mean and covariance was first approximated via either: 1) the fast minimum covariance determinant algorithm (FAST-MCD) as described in \cite{rousseeuw1999fast} or 2) the Orthogonalized Gnanadesikan-Kettenring algorithm (OGK) as described in \cite{maronna2002robust}. Specifically, FAST-MCD was used for low dimensional datasets, while OGK was used for high dimensional datasets to the fact that FAST-MCD scales poorly with increasing dimensionality. Next, using these robust measures, the Mahalanobis distance of each sample was computed. It has been shown that the squares of the robust Mahalanobis distances are approximately $\chi^2_n$, where $n$ is the dimensionality of the dataset \cite{hardin2012distribution} [FIND BETTER CITATION?]. It is then possible to define a alpha value above which to reject a sample as an outlier. 
+
+MX allows the user to set this alpha value and graphically displays the robust Mahalnobis distances and resulting threshold. This is shown in  Figure~\ref{fig:FigOutliers}.
+
+\subsection{Correlation}
+\label{SubSecCorrelation}
+
+\subsection{Feature Summary}
+\label{SubSecFeature}
+
+\subsection{Embedding \& Clustering}
+\label{SubSecEmbedding}
+
+\cite{van2008visualizing}
+
+\section{Validation}
+\label{sec:val}
+
+In order to demonstrate the ability of MX to allow for basic data analysis, it was implemented to explore the R iris dataset.
+
+
+\section{Conclusion}
+\label{sec:conc}
+
+
+\bigskip
+\begin{center}
+{\large\bf SUPPLEMENTARY MATERIAL}
+\end{center}
+
+\section{BibTeX}
+
+We hope you've chosen to use BibTeX!\ If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file Chicago was used here, and agsm.bst has been included here for your convenience. 
+
+\bibliographystyle{Chicago}
+
+\bibliography{BibliographyMX}
+\end{document}
