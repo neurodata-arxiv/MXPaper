@@ -79,42 +79,45 @@ MX is implemented via the R Shiny package, which allows for the construction of 
 
 \begin{figure}
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Upload_Raw.png}
-		\subcaption{}
-		\label{fig:FigUpload}
-	\end{subfigure}	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Heatmap_Raw.png}
-		\subcaption{}
-		\label{fig:FigHeatmap}
-	\end{subfigure}	
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Sample_Raw.png}
-		\subcaption{}
-		\label{fig:FigSample}
-	\end{subfigure} \hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Outliers_Raw.png}
-		\subcaption{}
-		\label{fig:FigOutliers}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Correlation_Raw.png}
-		\subcaption{}
-		\label{fig:FigCorrelation}
-	\end{subfigure}\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Feature_Raw.png}
-		\subcaption{}
-		\label{fig:FigFeature}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Embedding_Raw.png}
-		\subcaption{}
-		\label{fig:FigEmbedding}
-	\end{subfigure}
-	\caption{Various features of MX. (a) Initial screen shown to users, prompting them to upload a file, giving them several formating options, and allowing them to select relevant rows (red) and columns (blue). The user may also flag a certain feature as a class label column (yellow). (b) Heatmap of data with various normalization options. (c) Marginal distributions of individual features. (d) Robust Mahalnobis distances with choice of alpha cut-off value to reject samples as outliers. (e) Pearson's correlation between features. (f) Marginal distributions of all features on a single plot. (g) Two dimensional embedding and k-means clustering.}
+	\includegraphics[width=0.8\textwidth]{Figures/Upload_Raw.png}
+	\caption{Initial screen shown to users, prompting them to upload a file, giving them several formating options, and allowing them to select relevant rows (red) and columns (blue). The user may also flag a certain feature as a class label column (yellow).}
+	\label{fig:FigUpload}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Heatmap_Raw.png}
+	\caption{Heatmap of data with various normalization options.}
+	\label{fig:FigHeatmap}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Sample_Raw.png}
+	\caption{Marginal distributions of individual features.}
+	\label{fig:FigSample}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Outliers_Raw.png}
+	\caption{Robust Mahalanobis distances with choice of alpha cut-off value to reject samples as outliers.}
+	\label{fig:FigOutliers}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Correlation_Raw.png}
+	\caption{Pearson's correlation between features.}
+	\label{fig:FigCorrelation}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Feature_Raw.png}
+	\caption{Marginal distributions of all features on a single plot.}
+	\label{fig:FigFeature}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Embedding_Raw.png}
+	\caption{Two dimensional embedding and k-means clustering.}
+	\label{fig:FigEmbedding}
 \end{figure}
 
 Upon opening the application, the user is first prompted to upload a dataset. Note that MX assumes that rows in the dataset represent samples and columns represent features. Once uploading is complete, the user may then select the rows and columns that he or she wishes to analyze and also flag a specific column as a class label column. This in Figure~\ref{fig:FigUpload}. The current implementation accepts comma separated variable (CSV) files and is optimized for sizes below 1 gigabyte.
