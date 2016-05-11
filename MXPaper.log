@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  4 MAY 2016 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  11 MAY 2016 16:27
 entering extended mode
 **MXPaper.tex
 (MXPaper.tex
@@ -198,86 +198,134 @@ Package caption Info: End \AtBeginDocument code.
 Non-PDF special ignored!
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<fig1.pdf, id=13, 409.53pt x 406.51875pt>
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 83.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 88.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
+<Figures/Upload_Raw.png, id=13, 899.73349pt x 505.32977pt>
+File: Figures/Upload_Raw.png Graphic file (type png)
+
+<use Figures/Upload_Raw.png>
+Package pdftex.def Info: Figures/Upload_Raw.png used on input line 83.
+(pdftex.def)             Requested size: 208.01892pt x 108.40474pt.
+
+<Figures/Heatmap_Raw.png, id=15, 899.17325pt x 505.32977pt>
+File: Figures/Heatmap_Raw.png Graphic file (type png)
+
+<use Figures/Heatmap_Raw.png>
+Package pdftex.def Info: Figures/Heatmap_Raw.png used on input line 88.
+(pdftex.def)             Requested size: 208.01288pt x 108.40474pt.
+
+<Figures/Sample_Raw.png, id=16, 770.88pt x 433.62pt>
+File: Figures/Sample_Raw.png Graphic file (type png)
+
+<use Figures/Sample_Raw.png>
+Package pdftex.def Info: Figures/Sample_Raw.png used on input line 93.
+(pdftex.def)             Requested size: 208.01099pt x 108.40472pt.
+
+<Figures/Outliers_Raw.png, id=17, 899.73349pt x 505.89pt>
+File: Figures/Outliers_Raw.png Graphic file (type png)
+
+<use Figures/Outliers_Raw.png>
+Package pdftex.def Info: Figures/Outliers_Raw.png used on input line 98.
+(pdftex.def)             Requested size: 208.01892pt x 108.40141pt.
+
+<Figures/Correlation_Raw.png, id=18, 899.73349pt x 505.89pt>
+File: Figures/Correlation_Raw.png Graphic file (type png)
+
+<use Figures/Correlation_Raw.png>
+Package pdftex.def Info: Figures/Correlation_Raw.png used on input line 103.
+(pdftex.def)             Requested size: 208.01892pt x 108.40141pt.
+
+<Figures/Feature_Raw.png, id=19, 899.17325pt x 505.32977pt>
+File: Figures/Feature_Raw.png Graphic file (type png)
+
+<use Figures/Feature_Raw.png>
+Package pdftex.def Info: Figures/Feature_Raw.png used on input line 108.
+(pdftex.def)             Requested size: 208.01288pt x 108.40474pt.
+
+<Figures/Embedding_Raw.png, id=20, 899.73349pt x 505.89pt>
+File: Figures/Embedding_Raw.png Graphic file (type png)
+
+<use Figures/Embedding_Raw.png>
+Package pdftex.def Info: Figures/Embedding_Raw.png used on input line 113.
+(pdftex.def)             Requested size: 208.01892pt x 108.40141pt.
+
+
+LaTeX Warning: Float too large for page by 75.24373pt on input line 118.
+
+[2] [3 <./Figures/Upload_Raw.png> <./Figures/Heatmap_Raw.png> <./Figures/Sample
+_Raw.png> <./Figures/Outliers_Raw.png> <./Figures/Correlation_Raw.png> <./Figur
+es/Feature_Raw.png> <./Figures/Embedding_Raw.png>] [4] [5]
+<Figures/Iris/MarginalPetalLength.png, id=43, 899.17325pt x 289.08pt>
+File: Figures/Iris/MarginalPetalLength.png Graphic file (type png)
+
+<use Figures/Iris/MarginalPetalLength.png>
+Package pdftex.def Info: Figures/Iris/MarginalPetalLength.png used on input lin
+e 166.
+(pdftex.def)             Requested size: 369.81592pt x 126.47218pt.
+
+<Figures/Iris/MarginalPetalWidth.png, id=44, 899.17325pt x 289.08pt>
+File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
+
+<use Figures/Iris/MarginalPetalWidth.png>
+Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
+ 170.
+(pdftex.def)             Requested size: 369.81592pt x 126.47218pt.
+
+<Figures/Iris/MarginalSepalLength.png, id=45, 899.17325pt x 289.08pt>
+File: Figures/Iris/MarginalSepalLength.png Graphic file (type png)
+
+<use Figures/Iris/MarginalSepalLength.png>
+Package pdftex.def Info: Figures/Iris/MarginalSepalLength.png used on input lin
+e 174.
+(pdftex.def)             Requested size: 369.81592pt x 126.47218pt.
+
+<Figures/Iris/MarginalSepalWidth.png, id=46, 899.73349pt x 288.5982pt>
+File: Figures/Iris/MarginalSepalWidth.png Graphic file (type png)
+
+<use Figures/Iris/MarginalSepalWidth.png>
+Package pdftex.def Info: Figures/Iris/MarginalSepalWidth.png used on input line
+ 178.
+(pdftex.def)             Requested size: 369.81294pt x 126.47276pt.
+
+
+LaTeX Warning: Float too large for page by 42.39268pt on input line 183.
+
+<Figures/Iris/OutliersIris.png, id=47, 899.73349pt x 505.89pt>
+File: Figures/Iris/OutliersIris.png Graphic file (type png)
+
+<use Figures/Iris/OutliersIris.png>
+Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 188.
+(pdftex.def)             Requested size: 369.81294pt x 180.67676pt.
+ <fig1.pdf, id=48, 409.53pt x 406.51875pt>
 File: fig1.pdf Graphic file (type pdf)
 
 <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 93.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 98.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 103.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 108.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-
-
-LaTeX Warning: Float too large for page by 27.48929pt on input line 113.
-
-[2] [3 <./fig1.pdf>] [4] [5]
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 161.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 165.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 169.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
-
-<use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 173.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 183.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
-File: fig1.pdf Graphic file (type pdf)
- <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 188.
-(pdftex.def)             Requested size: 208.02643pt x 144.53535pt.
- [6] [7] [8] (MXPaper.bbl [9])
-[10] (MXPaper.aux) ) 
+Package pdftex.def Info: fig1.pdf used on input line 193.
+(pdftex.def)             Requested size: 369.84212pt x 180.67386pt.
+ [6] [7 <./Figures/Iris/MarginalPetalLength.png> <./Figures/Iris/MarginalPetalW
+idth.png> <./Figures/Iris/MarginalSepalLength.png> <./Figures/Iris/MarginalSepa
+lWidth.png>] [8] (MXPaper.bbl [9]) [10] [11 <./Figures/Iris/OutliersIris.png> <
+./fig1.pdf>] (MXPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 3463 strings out of 493698
- 49389 string characters out of 3144403
- 115424 words of memory out of 3000000
- 6780 multiletter control sequences out of 15000+200000
+ 3528 strings out of 493698
+ 51242 string characters out of 3144403
+ 115445 words of memory out of 3000000
+ 6830 multiletter control sequences out of 15000+200000
  11461 words of font info for 41 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,13n,40p,1162b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
-.pfb>
-Output written on MXPaper.pdf (10 pages, 160922 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb>
+Output written on MXPaper.pdf (11 pages, 1571689 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

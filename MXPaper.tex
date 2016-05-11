@@ -80,36 +80,41 @@ MX is implemented via the R Shiny package, which allows for the construction of 
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Upload_Raw.png}
 		\subcaption{}
 		\label{fig:FigUpload}
-	\end{subfigure}	\hfill	
+	\end{subfigure}	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Heatmap_Raw.png}
+		\subcaption{}
+		\label{fig:FigHeatmap}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Sample_Raw.png}
 		\subcaption{}
 		\label{fig:FigSample}
-	\end{subfigure}
+	\end{subfigure} \hfill
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Outliers_Raw.png}
 		\subcaption{}
 		\label{fig:FigOutliers}
-	\end{subfigure}\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
-		\subcaption{}
-		\label{fig:FigCorrelation}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Correlation_Raw.png}
 		\subcaption{}
-		\label{fig:FigFeature}
+		\label{fig:FigCorrelation}
 	\end{subfigure}\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Feature_Raw.png}
+		\subcaption{}
+		\label{fig:FigFeature}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth, height = 1.5in]{Figures/Embedding_Raw.png}
 		\subcaption{}
 		\label{fig:FigEmbedding}
 	\end{subfigure}
-	\caption{Various features of MX. (a) The initial screen shown to users, prompting them to upload a file, giving them several formating options, and allowing them to select relevant rows (red) and columns (blue). The user may also flag a certain feature as a class label column (yellow) (b) Marginal distributions of individual features. (c) Computed robust Mahalnobis distances with choice of alpha cut-off value to reject samples as outliers. (c) Heatmap of Pearson's correlation between features. (e) Marginal distributions of all of the features on a single plot. (f) Two dimensional embedding and k-means clustering.}
+	\caption{Various features of MX. (a) Initial screen shown to users, prompting them to upload a file, giving them several formating options, and allowing them to select relevant rows (red) and columns (blue). The user may also flag a certain feature as a class label column (yellow). (b) Heatmap of data with various normalization options. (c) Marginal distributions of individual features. (d) Robust Mahalnobis distances with choice of alpha cut-off value to reject samples as outliers. (e) Pearson's correlation between features. (f) Marginal distributions of all features on a single plot. (g) Two dimensional embedding and k-means clustering.}
 \end{figure}
 
 Upon opening the application, the user is first prompted to upload a dataset. Note that MX assumes that rows in the dataset represent samples and columns represent features. Once uploading is complete, the user may then select the rows and columns that he or she wishes to analyze and also flag a specific column as a class label column. This in Figure~\ref{fig:FigUpload}. The current implementation accepts comma separated variable (CSV) files and is optimized for sizes below 1 gigabyte.
@@ -119,7 +124,7 @@ Upon opening the application, the user is first prompted to upload a dataset. No
 
 A heatmap provides the most direct way of visualizing the data, besides simple looking at it as a data table. However, oftentimes clear trends in the data are obscured on a heatmap because of varying ranges amongst features. Normalization resolves this issue.
 
-MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary.
+MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary. Some of these capabilities are demonstrated in Figure~\ref{fig:FigHeatmap}. 
 
 \subsection{Sample Summary}
 \label{subsec:SubSecSample}
@@ -155,22 +160,22 @@ Note that PCA is extremely sensitive to (1) the scaling of the data and to the (
 \section{Validation}
 \label{sec:val}
 
-\begin{figure}[t]
+\begin{figure}
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth, height = 1.75in]{Figures/Iris/MarginalPetalLength.png}
 		\subcaption{}
-	\end{subfigure}	\hfill	
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth, height = 1.75in]{Figures/Iris/MarginalPetalWidth.png}
 		\subcaption{}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth, height = 1.75in]{Figures/Iris/MarginalSepalLength.png}
 		\subcaption{}
-	\end{subfigure}\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth, height = 1.75in]{Figures/Iris/MarginalSepalWidth.png}
 		\subcaption{}
 	\end{subfigure}
 	\caption{Feature marginals of the iris flower dataset after conditioning on class. (a) Petal length. (b) Petal width. (c) Sepal length. (d) Sepal width. Note the fairly good separability of the data using individual features.}
@@ -179,13 +184,13 @@ Note that PCA is extremely sensitive to (1) the scaling of the data and to the (
 
 \begin{figure}[t]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\begin{subfigure}[b]{0.80\textwidth}
+		\includegraphics[width=\textwidth, height = 2.5in]{Figures/Iris/OutliersIris.png}
 		\subcaption{}
 		\label{fig:IrisOutliers}
-	\end{subfigure}	\hfill	
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth, height = 2in]{fig1.pdf}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.80\textwidth}
+		\includegraphics[width=\textwidth, height = 2.5in]{fig1.pdf}
 		\subcaption{}
 		\label{fig:IrisEmbedding}
 	\end{subfigure}
