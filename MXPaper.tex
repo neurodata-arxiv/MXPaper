@@ -69,73 +69,77 @@ What is then required is a framework within which users with minimal statistical
 
 In this paper we describe Matrix Explorer (MX), a novel data exploration web application built via the R Shiny package. Within MX we have included the techniques which we deem nest practice whenever starting a new exploratory analysis task. MX provides users with minimal knowledge of statistics the tools necessary to conduct a basic characterization of their data.
 
-\section{Methods}
+\section{Methods \& Validation}
 \label{sec:meth}
 
-MX is implemented via the R Shiny package, which allows for the construction of interactive web applications which use R as their backend. The Shiny server is hosted on a Docker instance. The functionality of MX is divided into several different submodules, organized as tabs in the web application, which are described in depth below.
+MX is implemented via the R Shiny package, which allows for the construction of interactive web applications which use R as their backend. The Shiny server is hosted on a Docker instance. The functionality of MX is divided into several different submodules, organized as tabs in the web application, which we  describe in depth below. Furthermore, we provide visualizations and validation of the ability of MX to allow for basic data analysis by provided by exploring the iris flower dataset. 
+
+The iris dataset is composed of 50 samples from each of three types of iris flower (\textit{setosa}, \textit{virginica}, and \textit{versicolor}). For each sample four features are measured, specifically the length and width of the sepal and petals. For the purposes of the validation, we added a fifth feature column which gives the class label of each sample. We now seek the show that MX can detect that the samples should cluster into three distinct groups.
 
 \subsection{Data Upload \& Selection}
 \label{subsec:SubSecUpload}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Upload_Raw.png}
-	\caption{Initial screen shown to users, prompting them to upload a file, giving them several formating options, and allowing them to select relevant rows (red) and columns (blue). The user may also flag a certain feature as a class label column (yellow).}
-	\label{fig:FigUpload}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Heatmap_Raw.png}
-	\caption{Heatmap of data with various normalization options.}
-	\label{fig:FigHeatmap}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Sample_Raw.png}
-	\caption{Marginal distributions of individual features.}
-	\label{fig:FigSample}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Outliers_Raw.png}
-	\caption{Robust Mahalanobis distances with choice of alpha cut-off value to reject samples as outliers.}
-	\label{fig:FigOutliers}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Correlation_Raw.png}
-	\caption{Pearson's correlation between features.}
-	\label{fig:FigCorrelation}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Feature_Raw.png}
-	\caption{Marginal distributions of all features on a single plot.}
-	\label{fig:FigFeature}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Embedding_Raw.png}
-	\caption{Two dimensional embedding and k-means clustering.}
-	\label{fig:FigEmbedding}
-\end{figure}
-
-Upon opening the application, the user is first prompted to upload a dataset. Note that MX assumes that rows in the dataset represent samples and columns represent features. Once uploading is complete, the user may then select the rows and columns that he or she wishes to analyze and also flag a specific column as a class label column. This in Figure~\ref{fig:FigUpload}. The current implementation accepts comma separated variable (CSV) files and is optimized for sizes below 1 gigabyte.
+Upon opening the application, the user is first prompted to upload a dataset. Note that MX assumes that rows in the dataset represent samples and columns represent features. Once uploading is complete, the user may then select the rows and columns that he or she wishes to analyze and also flag a specific column as a class label column. The current implementation accepts comma separated variable (CSV) files and is optimized for sizes below 1 gigabyte. Hence, we converted our iris dataset to csv format and uploaded it to MX using the interface.
 
 \subsection{Heatmap \& Dendrogram}
 \label{subsec:SubSecHeatmap}
 
+\begin{figure}[t!]
+	\centering
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/HeatmapRawnodendro.png}
+		\subcaption{}
+		\label{fig:FigHeatmapRawnodendro}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/HeatmapRaw.png}
+		\subcaption{}
+		\label{fig:FigHeatmapRaw}
+	\end{subfigure}
+	\caption{Heatmap of iris dataset for various visualization options. Sample labels are not shown. (a) Heatmap of raw data. Note that there is no evidence for the existence of clusters. (b) Heatmap of raw data with dendrogram and associated row and column sorting. The existence of at least two clusters is clear.}
+	\label{fig:FigHeatmap}
+\end{figure}
+
 A heatmap provides the most direct way of visualizing the data, besides simple looking at it as a data table. However, oftentimes clear trends in the data are obscured on a heatmap because of varying ranges amongst features. Normalization resolves this issue.
 
-MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary. Some of these capabilities are demonstrated in Figure~\ref{fig:FigHeatmap}. 
+MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary. 
+
+Some of these capabilities are demonstrated in Figure~\ref{fig:FigHeatmap}. 
 
 \subsection{Sample Summary}
 \label{subsec:SubSecSample}
 
+\begin{figure}[t!]
+	\centering
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalWidthnocond.png}
+		\subcaption{}
+		\label{fig:FigMarginalNoCond}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalWidth.png}
+		\subcaption{}
+		\label{fig:FigMarginal}
+	\end{subfigure}
+	\caption{Marginal of the petal width feature of the iris dataset. (a) Histogram and kernel density estimate of the samples without conditioning on class. Note that it is unclear whether the distribution is multi-modal. (b) Histogram and kernel density estimate of the samples after conditioning on class. It is now clear that the marginal distribution is tri-modal.}
+	\label{fig:FigSample}
+\end{figure}
+
 MX allows users to visualize the marginal distributions of the individual feature columns. MX can generate either a histogram, a kernel density estimate, or a overlay of both. The mean and median is indicated on the plot. Additionally, if the user labeled a feature as a class label column, he or she has the option of conditioning the marginal on classes. This latter feature is incredibly useful for feature selection and determining the separability of the data based on class label within the feature space. This capability is demonstrated in Figure~\ref{fig:FigSample}. 
+
+The robust Mahalanobis distances, shown in  Figure~\ref{fig:IrisOutliers}, indicate that the first 50 samples are far away from the last 100 samples. This is expected, as these first 50 samples belong to the \textit{Iris setosa} class, while the last 100 belong to the \textit{Iris virginica} and \textit{Iris versicolor} class. Interestingly, the outlier analysis does not indicate a difference in distance between the samples from the \textit{Iris virginica} and \textit{Iris versicolor} class. Two-dimensional embedding via both PCA and tSNE visually separate the data into three distinct groups. The results with PCA are shown in Figure~\ref{fig:IrisEmbedding} after k-means with \textit{k = 3}.
+
+Therefore, we have shown that MX provides the ability to explore the iris dataset, helps construct visualizations of the distribution of the data, and acts a sa basic tool to help in the initial characterization of a dataset.
 
 \subsection{Outliers}
 \label{subsec:SubSecOutliers}
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Iris/OutliersIris.png}
+	\caption{Robust Mahalanobis distances with choice of alpha cut-off value to reject samples as outliers on the iris dataset. Note that 51 of the 150 samples are flagged as outliers. Such as large number of outliers usually indicates the existence of samples which belong to a separate group than the rest of the data. As a matter of fact, 50 of these 51 samples belong to the \textit{Iris setosa} class, which is apparently quite far from the samples which belong to the \textit{Iris virginica} and \textit{Iris versicolor} classes.}
+	\label{fig:FigOutliers}
+\end{figure}
 
 In order to determine outliers it is necessary to first establish a distance metric to determine how far away a specific sample is from other samples. In this case, robust Mahalanobis distances were used, as described in \cite{hubert2008high}. Briefly, a robust estimate of the sample mean and covariance was first approximated via either: 1) the fast minimum covariance determinant algorithm (FAST-MCD) as described in \cite{rousseeuw1999fast} or 2) the Orthogonalized Gnanadesikan-Kettenring algorithm (OGK) as described in \cite{maronna2002robust}. Specifically, FAST-MCD was used for low dimensional datasets, while OGK was used for high dimensional datasets to the fact that FAST-MCD scales poorly with increasing dimensionality. Next, using these robust measures, the Mahalanobis distance of each sample was computed. As explained by \cite{hardin2012distribution} [FIND BETTER CITATION?], the squares of the robust Mahalanobis distances are approximately distributed $\chi^2_n$, where $n$ is the dimensionality of the dataset . It is then possible to define a alpha value above which to reject a sample as an outlier. 
 
@@ -146,69 +150,43 @@ MX allows the user to set this alpha value and graphically displays the robust M
 
 Knowledge of which features are correlated is highly relevant besides assumption checking and feature selection in building classifiers. Similarly, they may aid in providing an intuitive understanding of the underlying patterns within the data. For example, in gene expression datasets these correlations may suggest the biological importance of various genetic markers [ANOTHER CITATION]. To see an example of when this is useful, we refer the reader to \cite{shi2012unsupervised} [BETTER CITATION].
 
-MX computes the Pearson's correlation amongst features and displays it to the user. To better understand the interactions and distributions of features, MX can also compute the euclidean distance between features. To account for scaling effects, users have the option of pre-processing the data via conversion to z-scores, quantiles, or ranks. Furthermore, users can remove the outliers detected in the outlier tab from the data before ocmputing the metrics. This is shown in Figure~\ref{fig:FigCorrelation}.
+MX computes the Pearson's correlation amongst features and displays it to the user. To better understand the interactions and distributions of features, MX can also compute the euclidean distance between features. To account for scaling effects, users have the option of pre-processing the data via conversion to z-scores, quantiles, or ranks. Furthermore, users can remove the outliers detected in the outlier tab from the data before computing the metrics. 
 
 \subsection{Feature Summary}
 \label{subsec:SubSecFeature}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/ScatterColor_Raw.png}
+		\subcaption{}
+		\label{fig:FigScatter}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Figures/Iris/LineColor_Raw.png}
+		\subcaption{}
+		\label{fig:FigLine}
+	\end{subfigure}
+	\caption{Visualization of the samples across all the features in the iris dataset. (a) Jittered scatter plot of the sample values across the features and colored based on class label. Note that the multi-modal nature of the petal width and petal length marginal distributions is clear. It is also apparent that the samples from the \textit{Iris setosa} class are very different from the samples from the other two classes. (b) Line plot showing the behavior of individual samples across the features. Each line represents the values a sample takes on at the corresponding feature. Visually, it is clear how differently the samples from the \textit{Iris setosa} class behave compared to samples from the other classes. Note also that we can now visually see the absence of actual outliers.}
+	\label{fig:FigFeature}
+\end{figure}
 
 MX allows users to visualize the marginal distributions of all the features on the same plot. This is done via a jittered scatter plot, vector of sample means with standard error bars, a box plot, and a violin plot. In order to ensure that outliers do not skew the visualizations, users have te options of removing outliers detected in the outlier tab from the dataset before generating the plots. These capabilities are shown in  Figure~\ref{fig:FigFeature}.
 
 \subsection{Embedding \& Clustering}
 \label{subsec:SubSecEmbedding}
 
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Iris/Embed_Raw.png}
+	\caption{Two-dimensional embedding of samples using PCA followed by coloring using labels given by k-means clustering with \textit{k = 3}. Samples clearly group into 2-3 clusters.}
+	\label{fig:FigEmbedding}
+\end{figure}
+
 One of the most intuitive ways of visualizing bivariate data is a scatter plot. Although this is not directly possible for data with more than two dimensions, various dimensionality reduction techniques can be used to embed the data within a two-dimensional coordinate system for simple examination of general structure and clustering. Dimensionality reduction techniques can be further reduced into linear and non-linear methods, both of which have their own unique advantages and disadvantages. For an overview of techniques we refer the reader to \cite{van2009dimensionality}. Within MX we have implemented one linear method, principle component analysis (PCA), and one non-linear method, t-distributed stochastic neighbor embedding (tSNE). For a thorough description of how tSNE works, see \cite{van2008visualizing}.
 
 Note that PCA is extremely sensitive to (1) the scaling of the data and to the (2) presence of outliers.  Hence, to overcome (1), MX allows users to normalize the feature columns by converting either to z-scores, quantiles, or ranks. Note that conversion to quantiles or ranks also decreases the sensitivity of the embedding to outliers, hence aiding in overcoming (2). MX also allows users to resolve (2) more directly by giving them the option to remove the outliers detected in the outliers tab before generating the visualization. In order to inform the users of how much information was lost by embedding the data set into two dimensions, MX also displays a scree plot, which indicates the percentage of retained variance after PCA. The described properties can be seen in Figure~\ref{fig:FigEmbedding}.
 
-\section{Validation}
-\label{sec:val}
-
-\begin{figure}
-	\centering
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalLength.png}
-		\subcaption{}
-	\end{subfigure}	
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalWidth.png}
-		\subcaption{}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalSepalLength.png}
-		\subcaption{}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalSepalWidth.png}
-		\subcaption{}
-	\end{subfigure}
-	\caption{Feature marginals of the iris flower dataset after conditioning on class. (a) Petal length. (b) Petal width. (c) Sepal length. (d) Sepal width. Note the fairly good separability of the data using individual features.}
-	\label{fig:IrisMarginals}
-\end{figure}
-
-\begin{figure}[t]
-	\centering
-	\begin{subfigure}[b]{0.80\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/OutliersIris.png}
-		\subcaption{}
-		\label{fig:IrisOutliers}
-	\end{subfigure}	
-	\begin{subfigure}[b]{0.80\textwidth}
-		\includegraphics[width=\textwidth]{fig1.pdf}
-		\subcaption{}
-		\label{fig:IrisEmbedding}
-	\end{subfigure}
-	\caption{Evidence of different classes of Iris flower. (a) Robust Mahalanobis distances for the iris dataset using all features. Note that the first 50 samples, which belong to the \textit{Iris setosa} class, are far away from the last 100 samples, which belong to the \textit{Iris virginica} and \textit{Iris versicolor} class. (b) Two-dimensional embedding of samples using PCA followed by coloring using labels given by k-means clustering with \textit{k = 3}. Samples clearly group into three clusters.}
-\end{figure}
-
-
-In order to demonstrate the ability of MX to allow for basic data analysis, it was implemented to explore the iris flower dataset. The iris dataset is composed of 50 samples from each of three types of iris flower (\textit{setosa}, \textit{virginica}, and \textit{versicolor}). For each sample four features are measured, specifically the length and width of the sepal and petals. For the purposes of the validation, we added a fifth feature column which gives the class label of each sample. We now seek the show that MX can detect that the samples should cluster into three distinct groups.
-
-We first conduct some basic feature selection by examining which features actually aid in the separability of the data by constructing marginal distributions of the features. The four feature marginals, after conditioning on class, are shown in  Figure~\ref{fig:IrisMarginals}. We see that, although there is overlap, the feature marginals separate well based on class.  Hence, we will initially use all the features for the analysis.
-
-The robust Mahalanobis distances, shown in  Figure~\ref{fig:IrisOutliers}, indicate that the first 50 samples are far away from the last 100 samples. This is expected, as these first 50 samples belong to the \textit{Iris setosa} class, while the last 100 belong to the \textit{Iris virginica} and \textit{Iris versicolor} class. Interestingly, the outlier analysis does not indicate a difference in distance between the samples from the \textit{Iris virginica} and \textit{Iris versicolor} class. Two-dimensional embedding via both PCA and tSNE visually separate the data into three distinct groups. The results with PCA are shown in Figure~\ref{fig:IrisEmbedding} after k-means with \textit{k = 3}.
-
-Therefore, we have shown that MX provides the ability to explore the iris dataset, helps construct visualizations of the distribution of the data, and acts a sa basic tool to help in the initial characterization of a dataset.
- 
 \section{Results}
 \label{sec:res}
 We next used MX to explore a previously unanalyzed dataset.

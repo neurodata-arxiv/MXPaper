@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  11 MAY 2016 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  13 MAY 2016 05:54
 entering extended mode
 **MXPaper.tex
 (MXPaper.tex
@@ -198,135 +198,107 @@ Package caption Info: End \AtBeginDocument code.
 Non-PDF special ignored!
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Figures/Upload_Raw.png, id=13, 899.73349pt x 505.32977pt>
-File: Figures/Upload_Raw.png Graphic file (type png)
+[2] <Figures/Iris/HeatmapRawnodendro.png, id=16, 899.73349pt x 403.2666pt>
+File: Figures/Iris/HeatmapRawnodendro.png Graphic file (type png)
 
-<use Figures/Upload_Raw.png>
-Package pdftex.def Info: Figures/Upload_Raw.png used on input line 82.
-(pdftex.def)             Requested size: 369.8174pt x 207.70316pt.
+<use Figures/Iris/HeatmapRawnodendro.png>
+Package pdftex.def Info: Figures/Iris/HeatmapRawnodendro.png used on input line
+ 90.
+(pdftex.def)             Requested size: 369.8174pt x 165.75264pt.
 
-<Figures/Heatmap_Raw.png, id=15, 899.17325pt x 505.32977pt>
-File: Figures/Heatmap_Raw.png Graphic file (type png)
+<Figures/Iris/HeatmapRaw.png, id=18, 899.73349pt x 403.7484pt>
+File: Figures/Iris/HeatmapRaw.png Graphic file (type png)
 
-<use Figures/Heatmap_Raw.png>
-Package pdftex.def Info: Figures/Heatmap_Raw.png used on input line 88.
-(pdftex.def)             Requested size: 369.8174pt x 207.83424pt.
+<use Figures/Iris/HeatmapRaw.png>
+Package pdftex.def Info: Figures/Iris/HeatmapRaw.png used on input line 95.
+(pdftex.def)             Requested size: 369.8174pt x 165.95067pt.
 
-<Figures/Sample_Raw.png, id=16, 770.88pt x 433.62pt>
-File: Figures/Sample_Raw.png Graphic file (type png)
+<Figures/Iris/MarginalPetalWidthnocond.png, id=19, 899.73349pt x 281.853pt>
+File: Figures/Iris/MarginalPetalWidthnocond.png Graphic file (type png)
 
-<use Figures/Sample_Raw.png>
-Package pdftex.def Info: Figures/Sample_Raw.png used on input line 94.
-(pdftex.def)             Requested size: 369.8174pt x 208.02275pt.
+<use Figures/Iris/MarginalPetalWidthnocond.png>
+Package pdftex.def Info: Figures/Iris/MarginalPetalWidthnocond.png used on inpu
+t line 115.
+(pdftex.def)             Requested size: 369.8174pt x 115.84862pt.
 
-<Figures/Outliers_Raw.png, id=17, 899.73349pt x 505.89pt>
-File: Figures/Outliers_Raw.png Graphic file (type png)
-
-<use Figures/Outliers_Raw.png>
-Package pdftex.def Info: Figures/Outliers_Raw.png used on input line 100.
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
-
-<Figures/Correlation_Raw.png, id=18, 899.73349pt x 505.89pt>
-File: Figures/Correlation_Raw.png Graphic file (type png)
-
-<use Figures/Correlation_Raw.png>
-Package pdftex.def Info: Figures/Correlation_Raw.png used on input line 106.
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
-
-<Figures/Feature_Raw.png, id=19, 899.17325pt x 505.32977pt>
-File: Figures/Feature_Raw.png Graphic file (type png)
-
-<use Figures/Feature_Raw.png>
-Package pdftex.def Info: Figures/Feature_Raw.png used on input line 112.
-(pdftex.def)             Requested size: 369.8174pt x 207.83424pt.
-
-<Figures/Embedding_Raw.png, id=20, 899.73349pt x 505.89pt>
-File: Figures/Embedding_Raw.png Graphic file (type png)
-
-<use Figures/Embedding_Raw.png>
-Package pdftex.def Info: Figures/Embedding_Raw.png used on input line 118.
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
- [2] [3 <./Figures/Upload_Raw.png> <./Figures/Heatmap_Raw.png>] [4 <./Figures/S
-ample_Raw.png> <./Figures/Outliers_Raw.png>]
-[5 <./Figures/Correlation_Raw.png> <./Figures/Feature_Raw.png>] [6 <./Figures/E
-mbedding_Raw.png>] [7] [8]
-<Figures/Iris/MarginalPetalLength.png, id=53, 899.17325pt x 289.08pt>
-File: Figures/Iris/MarginalPetalLength.png Graphic file (type png)
-
-<use Figures/Iris/MarginalPetalLength.png>
-Package pdftex.def Info: Figures/Iris/MarginalPetalLength.png used on input lin
-e 169.
-(pdftex.def)             Requested size: 369.8174pt x 118.89409pt.
-
-<Figures/Iris/MarginalPetalWidth.png, id=54, 899.17325pt x 289.08pt>
+<Figures/Iris/MarginalPetalWidth.png, id=20, 899.73349pt x 281.853pt>
 File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
 
 <use Figures/Iris/MarginalPetalWidth.png>
 Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
- 173.
-(pdftex.def)             Requested size: 369.8174pt x 118.89409pt.
+ 120.
+(pdftex.def)             Requested size: 369.8174pt x 115.84862pt.
+ [3]
 
-<Figures/Iris/MarginalSepalLength.png, id=55, 899.17325pt x 289.08pt>
-File: Figures/Iris/MarginalSepalLength.png Graphic file (type png)
-
-<use Figures/Iris/MarginalSepalLength.png>
-Package pdftex.def Info: Figures/Iris/MarginalSepalLength.png used on input lin
-e 177.
-(pdftex.def)             Requested size: 369.8174pt x 118.89409pt.
-
-<Figures/Iris/MarginalSepalWidth.png, id=56, 899.73349pt x 288.5982pt>
-File: Figures/Iris/MarginalSepalWidth.png Graphic file (type png)
-
-<use Figures/Iris/MarginalSepalWidth.png>
-Package pdftex.def Info: Figures/Iris/MarginalSepalWidth.png used on input line
- 181.
-(pdftex.def)             Requested size: 369.8174pt x 118.62106pt.
+LaTeX Warning: Reference `fig:IrisOutliers' on page 4 undefined on input line 1
+30.
 
 
-LaTeX Warning: Float too large for page by 11.8067pt on input line 186.
+LaTeX Warning: Reference `fig:IrisEmbedding' on page 4 undefined on input line 
+130.
 
-<Figures/Iris/OutliersIris.png, id=57, 899.73349pt x 505.89pt>
+[4 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRaw.png>]
+<Figures/Iris/OutliersIris.png, id=29, 899.73349pt x 428.802pt>
 File: Figures/Iris/OutliersIris.png Graphic file (type png)
 
 <use Figures/Iris/OutliersIris.png>
-Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 191.
+Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 139.
+(pdftex.def)             Requested size: 369.8174pt x 176.24834pt.
+ [5 <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetal
+Width.png>] [6 <./Figures/Iris/OutliersIris.png>] <Figures/Iris/ScatterColor_Ra
+w.png, id=42, 899.73349pt x 505.89pt>
+File: Figures/Iris/ScatterColor_Raw.png Graphic file (type png)
+
+<use Figures/Iris/ScatterColor_Raw.png>
+Package pdftex.def Info: Figures/Iris/ScatterColor_Raw.png used on input line 1
+61.
 (pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
- <fig1.pdf, id=58, 409.53pt x 406.51875pt>
-File: fig1.pdf Graphic file (type pdf)
 
-<use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 196.
-(pdftex.def)             Requested size: 369.8174pt x 367.12268pt.
+<Figures/Iris/LineColor_Raw.png, id=43, 899.73349pt x 505.89pt>
+File: Figures/Iris/LineColor_Raw.png Graphic file (type png)
+
+<use Figures/Iris/LineColor_Raw.png>
+Package pdftex.def Info: Figures/Iris/LineColor_Raw.png used on input line 166.
+
+(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
 
 
-LaTeX Warning: Float too large for page by 121.19444pt on input line 201.
+LaTeX Warning: Float too large for page by 25.08003pt on input line 172.
 
-[9] [10 <./Figures/Iris/MarginalPetalLength.png> <./Figures/Iris/MarginalPetalW
-idth.png> <./Figures/Iris/MarginalSepalLength.png> <./Figures/Iris/MarginalSepa
-lWidth.png>] (MXPaper.bbl [11]) [12] [13 <./Figures/Iris/OutliersIris.png> <./f
-ig1.pdf>] (MXPaper.aux) ) 
+<Figures/Iris/Embed_Raw.png, id=44, 899.73349pt x 505.89pt>
+File: Figures/Iris/Embed_Raw.png Graphic file (type png)
+
+<use Figures/Iris/Embed_Raw.png>
+Package pdftex.def Info: Figures/Iris/Embed_Raw.png used on input line 181.
+(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
+ [7] [8 <./Figures/Iris/ScatterColor_Raw.png> <./Figures/Iris/LineColor_Raw.png
+>] [9 <./Figures/Iris/Embed_Raw.png>]
+(MXPaper.bbl [10]) [11] (MXPaper.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3521 strings out of 493698
- 51097 string characters out of 3144403
- 114386 words of memory out of 3000000
- 6823 multiletter control sequences out of 15000+200000
- 11461 words of font info for 41 fonts, out of 3000000 for 9000
+ 3502 strings out of 493698
+ 50727 string characters out of 3144403
+ 114417 words of memory out of 3000000
+ 6810 multiletter control sequences out of 15000+200000
+ 11768 words of font info for 42 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,13n,40p,1162b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb>
-Output written on MXPaper.pdf (13 pages, 1572827 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MXPaper.pdf (11 pages, 1513230 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
