@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  13 MAY 2016 06:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  17 MAY 2016 16:10
 entering extended mode
 **MXPaper.tex
 (MXPaper.tex
@@ -164,33 +164,83 @@ LaTeX Info: Redefining \cite on input line 694.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (MXPaper.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count106
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen129
+\tc@lly=\dimen130
+\tc@urx=\dimen131
+\tc@ury=\dimen132
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen133
+\adjbox@Height=\dimen134
+\adjbox@Depth=\dimen135
+\adjbox@Totalheight=\dimen136
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count107
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count108
+\@vwid@loff=\dimen137
+\@vwid@roff=\dimen138
+)) (MXPaper.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen129
-\scratchbox=\box28
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen130
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count109
+\scratchdimen=\dimen139
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen140
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks24
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -198,96 +248,132 @@ Package caption Info: End \AtBeginDocument code.
 Non-PDF special ignored!
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] <Figures/Iris/HeatmapRawnodendro.png, id=16, 899.73349pt x 403.2666pt>
+[2]
+Overfull \hbox (1.94235pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/bx/n/12 a 
+ []
+
+<Figures/Iris/HeatmapRawnodendro.png, id=16, 596.4684pt x 375.804pt>
 File: Figures/Iris/HeatmapRawnodendro.png Graphic file (type png)
 
 <use Figures/Iris/HeatmapRawnodendro.png>
 Package pdftex.def Info: Figures/Iris/HeatmapRawnodendro.png used on input line
- 90.
-(pdftex.def)             Requested size: 369.8174pt x 165.75264pt.
+ 94.
+(pdftex.def)             Requested size: 208.02008pt x 131.06316pt.
 
-<Figures/Iris/HeatmapRaw.png, id=18, 899.73349pt x 403.7484pt>
-File: Figures/Iris/HeatmapRaw.png Graphic file (type png)
+Overfull \hbox (2.87985pt too wide) in paragraph at lines 99--100
+[]\OT1/cmr/bx/n/12 b 
+ []
 
-<use Figures/Iris/HeatmapRaw.png>
-Package pdftex.def Info: Figures/Iris/HeatmapRaw.png used on input line 95.
-(pdftex.def)             Requested size: 369.8174pt x 165.95067pt.
- [3]
-<Figures/Iris/MarginalPetalWidthnocond.png, id=22, 899.73349pt x 281.853pt>
+<Figures/Iris/HeatmapRanksDendro.png, id=18, 596.4684pt x 375.804pt>
+File: Figures/Iris/HeatmapRanksDendro.png Graphic file (type png)
+
+<use Figures/Iris/HeatmapRanksDendro.png>
+Package pdftex.def Info: Figures/Iris/HeatmapRanksDendro.png used on input line
+ 102.
+(pdftex.def)             Requested size: 208.02008pt x 131.06316pt.
+ [3 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRanksDendro.
+png>]
+Overfull \hbox (1.94235pt too wide) in paragraph at lines 123--124
+[]\OT1/cmr/bx/n/12 a 
+ []
+
+<Figures/Iris/MarginalPetalWidthnocond.png, id=24, 598.3956pt x 241.8636pt>
 File: Figures/Iris/MarginalPetalWidthnocond.png Graphic file (type png)
 
 <use Figures/Iris/MarginalPetalWidthnocond.png>
 Package pdftex.def Info: Figures/Iris/MarginalPetalWidthnocond.png used on inpu
-t line 115.
-(pdftex.def)             Requested size: 369.8174pt x 115.84862pt.
+t line 126.
+(pdftex.def)             Requested size: 208.02008pt x 84.0778pt.
 
-<Figures/Iris/MarginalPetalWidth.png, id=23, 899.73349pt x 281.853pt>
+Overfull \hbox (2.87985pt too wide) in paragraph at lines 131--132
+[]\OT1/cmr/bx/n/12 b 
+ []
+
+<Figures/Iris/MarginalPetalWidth.png, id=25, 597.9138pt x 241.8636pt>
 File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
 
 <use Figures/Iris/MarginalPetalWidth.png>
 Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
- 120.
-(pdftex.def)             Requested size: 369.8174pt x 115.84862pt.
- [4 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRaw.png>] [5
- <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetalWid
-th.png>]
-<Figures/Iris/OutliersIris.png, id=34, 899.73349pt x 428.802pt>
+ 134.
+(pdftex.def)             Requested size: 208.02008pt x 84.14423pt.
+ [4 <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetal
+Width.png>]
+<Figures/Iris/OutliersIris.png, id=31, 600.8046pt x 238.9728pt>
 File: Figures/Iris/OutliersIris.png Graphic file (type png)
 
 <use Figures/Iris/OutliersIris.png>
-Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 137.
-(pdftex.def)             Requested size: 369.8174pt x 176.24834pt.
- [6 <./Figures/Iris/OutliersIris.png>]
-<Figures/Iris/ScatterColor_Raw.png, id=39, 899.73349pt x 505.89pt>
-File: Figures/Iris/ScatterColor_Raw.png Graphic file (type png)
+Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 152.
+(pdftex.def)             Requested size: 369.8174pt x 147.10048pt.
+ [5 <./Figures/Iris/OutliersIris.png>]
+[6]
+Overfull \hbox (1.94235pt too wide) in paragraph at lines 174--175
+[]\OT1/cmr/bx/n/12 a 
+ []
 
-<use Figures/Iris/ScatterColor_Raw.png>
-Package pdftex.def Info: Figures/Iris/ScatterColor_Raw.png used on input line 1
-59.
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
+<Figures/Iris/ScatterColor.png, id=42, 600.3228pt x 448.074pt>
+File: Figures/Iris/ScatterColor.png Graphic file (type png)
 
-<Figures/Iris/LineColor_Raw.png, id=40, 899.73349pt x 505.89pt>
-File: Figures/Iris/LineColor_Raw.png Graphic file (type png)
+<use Figures/Iris/ScatterColor.png>
+Package pdftex.def Info: Figures/Iris/ScatterColor.png used on input line 177.
+(pdftex.def)             Requested size: 208.02008pt x 155.26256pt.
 
-<use Figures/Iris/LineColor_Raw.png>
-Package pdftex.def Info: Figures/Iris/LineColor_Raw.png used on input line 164.
+Overfull \hbox (2.87985pt too wide) in paragraph at lines 182--183
+[]\OT1/cmr/bx/n/12 b 
+ []
 
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
+<Figures/Iris/LineColor.png, id=43, 600.8046pt x 448.074pt>
+File: Figures/Iris/LineColor.png Graphic file (type png)
 
+<use Figures/Iris/LineColor.png>
+Package pdftex.def Info: Figures/Iris/LineColor.png used on input line 185.
+(pdftex.def)             Requested size: 208.02008pt x 155.13948pt.
+ [7 <./Figures/Iris/ScatterColor.png> <./Figures/Iris/LineColor.png>]
+Overfull \hbox (1.94235pt too wide) in paragraph at lines 204--205
+[]\OT1/cmr/bx/n/12 a 
+ []
 
-LaTeX Warning: Float too large for page by 4.05508pt on input line 170.
+<Figures/Iris/EmbedRaw.png, id=50, 601.7682pt x 234.6366pt>
+File: Figures/Iris/EmbedRaw.png Graphic file (type png)
 
-[7] [8 <./Figures/Iris/ScatterColor_Raw.png> <./Figures/Iris/LineColor_Raw.png>
-] <Figures/Iris/Embed_Raw.png, id=53, 899.73349pt x 505.89pt>
-File: Figures/Iris/Embed_Raw.png Graphic file (type png)
+<use Figures/Iris/EmbedRaw.png>
+Package pdftex.def Info: Figures/Iris/EmbedRaw.png used on input line 207.
+(pdftex.def)             Requested size: 208.02008pt x 81.10724pt.
 
-<use Figures/Iris/Embed_Raw.png>
-Package pdftex.def Info: Figures/Iris/Embed_Raw.png used on input line 181.
-(pdftex.def)             Requested size: 369.8174pt x 207.93343pt.
- [9] [10 <./Figures/Iris/Embed_Raw.png>]
-(MXPaper.bbl [11]) [12] (MXPaper.aux) ) 
+Overfull \hbox (2.87985pt too wide) in paragraph at lines 212--213
+[]\OT1/cmr/bx/n/12 b 
+ []
+
+<Figures/Iris/EmbedZ.png, id=51, 601.7682pt x 234.6366pt>
+File: Figures/Iris/EmbedZ.png Graphic file (type png)
+
+<use Figures/Iris/EmbedZ.png>
+Package pdftex.def Info: Figures/Iris/EmbedZ.png used on input line 215.
+(pdftex.def)             Requested size: 208.02008pt x 81.10724pt.
+ [8 <./Figures/Iris/EmbedRaw.png> <./Figures/Iris/EmbedZ.png>] [9] (MXPaper.bbl
+ [10]) [11] (MXPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 3499 strings out of 493698
- 50675 string characters out of 3144403
- 113418 words of memory out of 3000000
- 6807 multiletter control sequences out of 15000+200000
- 11461 words of font info for 41 fonts, out of 3000000 for 9000
+ 4246 strings out of 493698
+ 62548 string characters out of 3144403
+ 126327 words of memory out of 3000000
+ 7518 multiletter control sequences out of 15000+200000
+ 11768 words of font info for 42 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,13n,40p,1162b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmti12.pfb>
-Output written on MXPaper.pdf (12 pages, 1515727 bytes).
+ 42i,13n,75p,1162b,520s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on MXPaper.pdf (11 pages, 1325123 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

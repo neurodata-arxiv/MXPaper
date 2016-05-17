@@ -4,6 +4,7 @@
 \usepackage{enumerate}
 \usepackage{natbib}
 \usepackage{url} % not crucial - just used below for the URL 
+\usepackage[export]{adjustbox}
 
 %\pdfminorversion=4
 % NOTE: To produce blinded version, replace "0" with "1" below.
@@ -15,7 +16,7 @@
 \addtolength{\textwidth}{1in}%
 \addtolength{\textheight}{1.3in}%
 \addtolength{\topmargin}{-.8in}%
-
+\captionsetup[subfigure]{labelformat = empty,position=top}
 
 \begin{document}
 
@@ -51,7 +52,7 @@
 
 \bigskip
 \begin{abstract}
-\noindent Exploration and visualization of structured data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, oftentimes basic researchers lack the statistical knowledge to analyze their data. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to upload and explore small to medium sized structured datasets. The current tool is optimized for files of size less than 1 Gb. Within Matrix Explorer we have implemented some very basic techniques which we believe are relevant to any sort of data analyses: (i) data reordering, sorting, and searching; (ii) data visualization via heatmap , scatter/box/violin plots, marginal distributions, and 2D embedding; (iii) data exploration via k-means clustering, dendrogram, correlation and covariance matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset. We then used Matrix Explorer to analyze a novel SPECT image dataset.
+\noindent Exploration and visualization of structured data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, oftentimes basic researchers lack the statistical knowledge to analyze their data. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to upload and explore small to medium sized structured datasets. The current tool is optimized for files of size less than 1 GB. Within Matrix Explorer we have implemented some very basic techniques which we believe are relevant to any sort of data analyses: (i) data reordering, sorting, and searching; (ii) data visualization via heatmap , scatter/box/violin plots, marginal distributions, and 2D embedding; (iii) data exploration via k-means clustering, dendrogram, correlation and covariance matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset. We then used Matrix Explorer to analyze a novel SPECT image dataset.
 \end{abstract}
 
 \noindent%
@@ -86,17 +87,24 @@ Upon opening the application, the user is first prompted to upload a dataset. No
 
 \begin{figure}[t!]
 	\centering
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/HeatmapRawnodendro.png}
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{a}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/HeatmapRawnodendro.png}
 		\subcaption{}
 		\label{fig:FigHeatmapRawnodendro}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{b}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/HeatmapRaw.png}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/HeatmapRanksDendro.png}
 		\subcaption{}
-		\label{fig:FigHeatmapRaw}
+		\label{fig:FigHeatmapRanksdendro}
 	\end{subfigure}
-	\caption{Heatmap of iris dataset for various visualization options. Sample labels are not shown. (a) Heatmap of raw data. Note that there is no evidence for the existence of clusters. (b) Heatmap of raw data with dendrogram and associated row and column sorting. The existence of at least two clusters is clear.}
+	\vspace{-1.5\baselineskip}
+	\caption{Heatmap of iris dataset for various visualization options. Sample labels are not shown. (a) Heatmap of raw data. Note that there is no evidence for the existence of clusters. (b) Heatmap of data converted to rank with dendrogram and associated row and column sorting. The existence of at least two clusters is clear.}
 	\label{fig:FigHeatmap}
 \end{figure}
 
@@ -104,23 +112,30 @@ A heatmap provides the most direct way of visualizing the data, besides simple l
 
 MX allows users to construct a heatmap of their data and gives them the option to normalize it via conversion to z-scores, quantiles, or ranks. Furthermore, for datasets with less than 100 rows and columns, MX uses hierarchical clustering to compute a dendrogram of the dataset and display it, reordering the columns and rows as necessary. 
 
-We used this feature of MX to do our initial exploration of the iris dataset. Note that a simple heatmap of the unnormalized dataset, as shown in Figure~\ref{fig:FigHeatmapRawnodendro}, is not particularly useful. There is no clear structure to the data. This is where dendrograms and the associated sorting they impose upon the rows and columns of the heatmap become useful. A heatmap and dendrogram for the unnormalized data is shown in Figure~\ref{fig:FigHeatmapRaw}. Note that the existence of at least 2 clusters is now apparent. Pre-processing the data via the normalization schemes implemented in MX provides similar results. 
+We used this feature of MX to do our initial exploration of the iris dataset. Note that a simple heatmap of the unnormalized dataset, as shown in Figure~\ref{fig:FigHeatmapRawnodendro}, is not particularly useful. There is no clear structure to the data. This is where normalization schemes as well as dendrograms and the associated sorting they impose upon the rows and columns of the heatmap become useful. A heatmap and dendrogram for the ranked data is shown in Figure~\ref{fig:FigHeatmapRanksdendro}. Note that the existence of at least 2 clusters is now apparent.
 
 \subsection{Sample Summary}
 \label{subsec:SubSecSample}
 
 \begin{figure}[t!]
 	\centering
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalWidthnocond.png}
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{a}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/MarginalPetalWidthnocond.png}
 		\subcaption{}
 		\label{fig:FigMarginalNoCond}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{b}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/MarginalPetalWidth.png}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/MarginalPetalWidth.png}
 		\subcaption{}
 		\label{fig:FigMarginal}
 	\end{subfigure}
+	\vspace{-1.5\baselineskip}
 	\caption{Marginal of the petal width feature of the iris dataset. (a) Histogram and kernel density estimate of the samples without conditioning on class. Note that it is unclear whether the distribution is multi-modal. (b) Histogram and kernel density estimate of the samples after conditioning on class. It is now clear that the marginal distribution is tri-modal.}
 	\label{fig:FigSample}
 \end{figure}
@@ -153,18 +168,25 @@ MX computes the Pearson's correlation amongst features and displays it to the us
 \subsection{Feature Summary}
 \label{subsec:SubSecFeature}
 
-\begin{figure}
+\begin{figure}[t!]
 	\centering
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/ScatterColor_Raw.png}
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{a}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/ScatterColor.png}
 		\subcaption{}
 		\label{fig:FigScatter}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{b}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Figures/Iris/LineColor_Raw.png}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/LineColor.png}
 		\subcaption{}
 		\label{fig:FigLine}
 	\end{subfigure}
+	\vspace{-1.5\baselineskip}
 	\caption{Visualization of the samples across all the features in the iris dataset. (a) Jittered scatter plot of the sample values across the features and colored based on class label. Note that the multi-modal nature of the petal width and petal length marginal distributions is clear. It is also apparent that the samples from the \textit{Iris setosa} class are very different from the samples from the other two classes. (b) Line plot showing the behavior of individual samples across the features. Visually, it is clear how differently the samples from the \textit{Iris setosa} class behave compared to samples from the other classes. Note also that we can now visually see the absence of actual outliers.}
 	\label{fig:FigFeature}
 \end{figure}
@@ -178,7 +200,23 @@ A jittered scatter plot of the iris data, colored by class label, is shown in Fi
 
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Iris/Embed_Raw.png}
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{a}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/EmbedRaw.png}
+		\subcaption{}
+		\label{fig:FigEmbedRaw}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{b}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Iris/EmbedZ.png}
+		\subcaption{}
+		\label{fig:FigEmbedZ}
+	\end{subfigure}
+	\vspace{-1.5\baselineskip}
 	\caption{Two-dimensional embedding of samples using PCA followed by coloring using labels given by k-means clustering with \textit{k = 3}. Samples clearly group into 2-3 clusters.}
 	\label{fig:FigEmbedding}
 \end{figure}
@@ -187,7 +225,7 @@ One of the most intuitive ways of visualizing bivariate data is a scatter plot. 
 
 Note that PCA is extremely sensitive to (1) the scaling of the data and to the (2) presence of outliers.  Hence, to overcome (1), MX allows users to normalize the feature columns by converting either to z-scores, quantiles, or ranks. Note that conversion to quantiles or ranks also decreases the sensitivity of the embedding to outliers, hence aiding in overcoming (2). MX also allows users to resolve (2) more directly by giving them the option to remove the outliers detected in the outliers tab before generating the visualization. In order to inform the users of how much information was lost by embedding the data set into two dimensions, MX also displays a scree plot, which indicates the percentage of retained variance after PCA. 
 
-Two-dimensional embedding via PCA for the iris data is shown in Figure~\ref{fig:FigEmbedding} after coloring using labels attained via k-means with \textit{k = 3}. Note that samples clearly group into 2-3 clusters. As we have seen above, the cluster that lies far away from the other two is likely composed of samples which belong to the \textit{Iris setosa} class.
+Two-dimensional embedding via PCA for the raw  and z-score normalized iris data after coloring using labels attained via k-means with \textit{k = 3} is shown in Figure~\ref{fig:FigEmbedRaw} and Figure~\ref{fig:FigEmbedZ}, respectively. Note that it is visually clear that the raw data clusters better than the z-score normalized data, suggesting that the current standard of normalizing to z-scores is not alway optimal. Nonetheless, the samples clearly group into 2-3 clusters. As we have seen above, the cluster that lies far away from the other two is likely composed of samples which belong to the \textit{Iris setosa} class.
 
 \section{Results}
 \label{sec:res}
