@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  17 MAY 2016 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  17 MAY 2016 17:08
 entering extended mode
 **MXPaper.tex
 (MXPaper.tex
@@ -259,7 +259,7 @@ File: Figures/Iris/HeatmapRawnodendro.png Graphic file (type png)
 <use Figures/Iris/HeatmapRawnodendro.png>
 Package pdftex.def Info: Figures/Iris/HeatmapRawnodendro.png used on input line
  94.
-(pdftex.def)             Requested size: 208.02008pt x 131.06316pt.
+(pdftex.def)             Requested size: 221.88762pt x 139.80223pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 99--100
 []\OT1/cmr/bx/n/12 b 
@@ -271,7 +271,7 @@ File: Figures/Iris/HeatmapRanksDendro.png Graphic file (type png)
 <use Figures/Iris/HeatmapRanksDendro.png>
 Package pdftex.def Info: Figures/Iris/HeatmapRanksDendro.png used on input line
  102.
-(pdftex.def)             Requested size: 208.02008pt x 131.06316pt.
+(pdftex.def)             Requested size: 221.88762pt x 139.80223pt.
  [3 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRanksDendro.
 png>]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 123--124
@@ -284,7 +284,7 @@ File: Figures/Iris/MarginalPetalWidthnocond.png Graphic file (type png)
 <use Figures/Iris/MarginalPetalWidthnocond.png>
 Package pdftex.def Info: Figures/Iris/MarginalPetalWidthnocond.png used on inpu
 t line 126.
-(pdftex.def)             Requested size: 208.02008pt x 84.0778pt.
+(pdftex.def)             Requested size: 221.88762pt x 89.68372pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 131--132
 []\OT1/cmr/bx/n/12 b 
@@ -296,7 +296,7 @@ File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
 <use Figures/Iris/MarginalPetalWidth.png>
 Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
  134.
-(pdftex.def)             Requested size: 208.02008pt x 84.14423pt.
+(pdftex.def)             Requested size: 221.88762pt x 89.75385pt.
  [4 <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetal
 Width.png>]
 <Figures/Iris/OutliersIris.png, id=31, 600.8046pt x 238.9728pt>
@@ -304,52 +304,52 @@ File: Figures/Iris/OutliersIris.png Graphic file (type png)
 
 <use Figures/Iris/OutliersIris.png>
 Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 152.
-(pdftex.def)             Requested size: 369.8174pt x 147.10048pt.
+(pdftex.def)             Requested size: 439.15508pt x 174.68205pt.
  [5 <./Figures/Iris/OutliersIris.png>]
 [6]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 174--175
 []\OT1/cmr/bx/n/12 a 
  []
 
-<Figures/Iris/ScatterColor.png, id=42, 600.3228pt x 448.074pt>
+<Figures/Iris/ScatterColor.png, id=42, 572.8602pt x 448.074pt>
 File: Figures/Iris/ScatterColor.png Graphic file (type png)
 
 <use Figures/Iris/ScatterColor.png>
 Package pdftex.def Info: Figures/Iris/ScatterColor.png used on input line 177.
-(pdftex.def)             Requested size: 208.02008pt x 155.26256pt.
+(pdftex.def)             Requested size: 221.88762pt x 173.55167pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 182--183
 []\OT1/cmr/bx/n/12 b 
  []
 
-<Figures/Iris/LineColor.png, id=43, 600.8046pt x 448.074pt>
+<Figures/Iris/LineColor.png, id=43, 572.8602pt x 448.074pt>
 File: Figures/Iris/LineColor.png Graphic file (type png)
 
 <use Figures/Iris/LineColor.png>
 Package pdftex.def Info: Figures/Iris/LineColor.png used on input line 185.
-(pdftex.def)             Requested size: 208.02008pt x 155.13948pt.
+(pdftex.def)             Requested size: 221.88762pt x 173.55167pt.
  [7 <./Figures/Iris/ScatterColor.png> <./Figures/Iris/LineColor.png>]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 204--205
 []\OT1/cmr/bx/n/12 a 
  []
 
-<Figures/Iris/EmbedRaw.png, id=50, 601.7682pt x 234.6366pt>
+<Figures/Iris/EmbedRaw.png, id=50, 571.8966pt x 234.6366pt>
 File: Figures/Iris/EmbedRaw.png Graphic file (type png)
 
 <use Figures/Iris/EmbedRaw.png>
 Package pdftex.def Info: Figures/Iris/EmbedRaw.png used on input line 207.
-(pdftex.def)             Requested size: 208.02008pt x 81.10724pt.
+(pdftex.def)             Requested size: 221.88762pt x 91.03531pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 212--213
 []\OT1/cmr/bx/n/12 b 
  []
 
-<Figures/Iris/EmbedZ.png, id=51, 601.7682pt x 234.6366pt>
+<Figures/Iris/EmbedZ.png, id=51, 571.8966pt x 234.6366pt>
 File: Figures/Iris/EmbedZ.png Graphic file (type png)
 
 <use Figures/Iris/EmbedZ.png>
 Package pdftex.def Info: Figures/Iris/EmbedZ.png used on input line 215.
-(pdftex.def)             Requested size: 208.02008pt x 81.10724pt.
+(pdftex.def)             Requested size: 221.88762pt x 91.03531pt.
  [8 <./Figures/Iris/EmbedRaw.png> <./Figures/Iris/EmbedZ.png>] [9] (MXPaper.bbl
  [10]) [11] (MXPaper.aux) ) 
 Here is how much of TeX's memory you used:
@@ -371,7 +371,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmti12.pfb>
-Output written on MXPaper.pdf (11 pages, 1325123 bytes).
+Output written on MXPaper.pdf (11 pages, 1321783 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
