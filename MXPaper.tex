@@ -5,6 +5,7 @@
 \usepackage{natbib}
 \usepackage{url} % not crucial - just used below for the URL 
 \usepackage[export]{adjustbox}
+\usepackage{authblk}
 
 %\pdfminorversion=4
 % NOTE: To produce blinded version, replace "0" with "1" below.
@@ -25,23 +26,22 @@
 \def\spacingset#1{\renewcommand{\baselinestretch}%
 {#1}\small\normalsize} \spacingset{1}
 \setlength{\parindent}{5ex}
-
+\renewcommand\Affilfont{\fontsize{11pt}{10.8}\itshape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \if0\blind
 {
   \title{\bf Matrix Explorer: A Web Application for Data Exploration}
-  \author{Ivan A. Kuznetsov and Joshua T. Vogelstein\thanks{
-  		The authors gratefully acknowledge \textit{please remember to list all relevant funding sources in the unblinded version}}\hspace{.2cm} \\
-    Department of Biomedical Engineering, The Johns Hopkins\\
-    University, Baltimore, Maryland 21218, USA}
+  \author[1]{Ivan A. Kuznetsov}
+  \author[1,2]{Joshua T. Vogelstein\thanks{\textit{This work is graciously supported by the Defense Advanced Research Projects Agency (DARPA) SIMPLEX program through SPAWAR contract N66001-15-C-4041, DARPA GRAPHS N66001-14-1-4028, and NIH-TRA 1R01NS092474, "Synaptomes of Mouse and Man".}}}
+  \affil[1]{Department of Biomedical Engineering, The Johns Hopkins University, Baltimore, Maryland 21218, USA}
+  \affil[2]{Institute for Computational Medicine, The Johns Hopkins University, Baltimore, Maryland 21218, USA}
   \maketitle
 } \fi
 
 \if1\blind
 {
-  \bigskip
   \bigskip
   \bigskip
   \begin{center}
@@ -52,7 +52,7 @@
 
 \bigskip
 \begin{abstract}
-\noindent Exploration and visualization of structured data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, oftentimes basic researchers lack the statistical knowledge to analyze their data. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to upload and explore small to medium sized structured datasets. The current tool is optimized for files of size less than 1 GB. Within Matrix Explorer we have implemented some very basic techniques which we believe are relevant to any sort of data analyses: (i) data reordering, sorting, and searching; (ii) data visualization via heatmap , scatter/box/violin plots, marginal distributions, and 2D embedding; (iii) data exploration via k-means clustering, dendrogram, correlation and covariance matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset. We then used Matrix Explorer to analyze a novel SPECT image dataset.
+\noindent Exploration and visualization of structured data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, oftentimes basic researchers lack the statistical knowledge to analyze their data. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to upload and explore small to medium sized structured datasets. The current tool is optimized for files of size less than 1 GB. Within Matrix Explorer we have implemented some very basic techniques which we believe are relevant to any sort of data analyses, such as data visualization via heatmaps, scatter/line plots, marginal distributions, and two-dimensional embedding and data exploration via k-means clustering, dendrograms, correlation matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset.
 \end{abstract}
 
 \noindent%
@@ -154,14 +154,14 @@ We used MX to construct the feature marginals. The distribution for petal width 
 	\label{fig:FigOutliers}
 \end{figure}
 
-In order to determine outliers it is necessary to first establish a distance metric to determine how far away a specific sample is from other samples. In this case, robust Mahalanobis distances were used, as described in \cite{hubert2008high}. Briefly, a robust estimate of the sample mean and covariance was first approximated via either: 1) the fast minimum covariance determinant algorithm (FAST-MCD) as described in \cite{rousseeuw1999fast} or 2) the Orthogonalized Gnanadesikan-Kettenring algorithm (OGK) as described in \cite{maronna2002robust}. Specifically, FAST-MCD was used for low dimensional datasets, while OGK was used for high dimensional datasets to the fact that FAST-MCD scales poorly with increasing dimensionality. Next, using these robust measures, the Mahalanobis distance of each sample was computed. As explained by \cite{hardin2012distribution} [FIND BETTER CITATION?], the squares of the robust Mahalanobis distances are approximately distributed $\chi^2_n$, where $n$ is the dimensionality of the dataset . It is then possible to define a alpha value above which to reject a sample as an outlier. 
+In order to determine outliers it is necessary to first establish a distance metric to determine how far away a specific sample is from other samples. In this case, robust Mahalanobis distances were used, as described in \cite{hubert2008high}. Briefly, a robust estimate of the sample mean and covariance was first approximated via either: 1) the fast minimum covariance determinant algorithm (FAST-MCD) as described in \cite{rousseeuw1999fast} or 2) the Orthogonalized Gnanadesikan-Kettenring algorithm (OGK) as described in \cite{maronna2002robust}. Specifically, FAST-MCD was used for low dimensional datasets, while OGK was used for high dimensional datasets to the fact that FAST-MCD scales poorly with increasing dimensionality. Next, using these robust measures, the Mahalanobis distance of each sample was computed. As explained by \cite{hardin2012distribution}, the squares of the robust Mahalanobis distances are approximately distributed $\chi^2_n$, where $n$ is the dimensionality of the dataset . It is then possible to define a alpha value above which to reject a sample as an outlier. 
 
 MX allows the user to set this alpha value and graphically displays the robust Mahalnobis distances and resulting threshold. The robust Mahalanobis distances for the iris data are shown in Figure~\ref{fig:FigOutliers}. MX labels 51 of the 150 samples as outliers, which is a very high fraction. it is quite unlikely that all of these are actually outliers, and it is more likely that the samples which were flagged as outliers actually mostly belong to a single class of iris flower that simply is very far away from the other two classes. If we examine the class labels, this is exactly what we find: 50 of these 51 samples belong to the \textit{Iris setosa} class, which is apparently quite far from the samples which belong to the \textit{Iris virginica} and \textit{Iris versicolor} classes. Interestingly, the outlier analysis does not indicate a difference in distance between the samples from the \textit{Iris virginica} and \textit{Iris versicolor} class. 
 
 \subsection{Correlation}
 \label{subsec:SubSecCorrelation}
 
-Knowledge of which features are correlated is highly relevant besides assumption checking and feature selection in building classifiers. Similarly, they may aid in providing an intuitive understanding of the underlying patterns within the data. For example, in gene expression datasets these correlations may suggest the biological importance of various genetic markers [ANOTHER CITATION]. To see an example of when this is useful, we refer the reader to \cite{shi2012unsupervised} [BETTER CITATION].
+Knowledge of which features are correlated is highly relevant besides assumption checking and feature selection in building classifiers. Similarly, they may aid in providing an intuitive understanding of the underlying patterns within the data. For example, in gene expression datasets these correlations may suggest the biological importance of various genetic markers. To see an example of when this is useful, we refer the reader to \cite{shi2012unsupervised}.
 
 MX computes the Pearson's correlation amongst features and displays it to the user. To better understand the interactions and distributions of features, MX can also compute the euclidean distance between features. To account for scaling effects, users have the option of pre-processing the data via conversion to z-scores, quantiles, or ranks. Furthermore, users can remove the outliers detected in the outlier tab from the data before computing the metrics. Using these feature on the iris data, we found that all 4 of the features are strongly correlated with one another (data not shown).
 
@@ -217,7 +217,7 @@ A jittered scatter plot of the iris data, colored by class label, is shown in Fi
 		\label{fig:FigEmbedZ}
 	\end{subfigure}
 	\vspace{-1.5\baselineskip}
-	\caption{Two-dimensional embedding of samples using PCA followed by coloring using labels given by k-means clustering with \textit{k = 3}. Samples clearly group into 2-3 clusters.}
+	\caption{Two-dimensional embedding of samples using PCA followed by coloring using labels given by k-means clustering with \textit{k = 3} using (a) raw data and (b) z-score normalized data. Note that while samples clearly group into 2-3 clusters, the k-means result is visually worse in (b) compared to (a).}
 	\label{fig:FigEmbedding}
 \end{figure}
 
@@ -229,14 +229,14 @@ Two-dimensional embedding via PCA for the raw  and z-score normalized iris data 
 
 \section{Results}
 \label{sec:res}
-We next used MX to explore a previously unanalyzed dataset.
+We next used MX to explore a previously unanalyzed dataset. [THIS SECTION MIGHT GET CUT]
 
 \section{Conclusion}
 \label{sec:conc}
 
 We have created MX, a web application driven by the R Shiny package, which allows for basic data exploration and visualization of small to medium sized datasets. Within MX, we have included the tools whose usage we believe to be best practice whenever exploring a new dataset. We have validated the functionality of MX by demonstrating its capability to characterize the iris flower dataset and determine the presence of three different classes. We have then used MX to explore a previously uncharacterized dataset, a collection of SPECT images from over 5000 patients.
 
-Although the implemented algorithms may seem simplistic to those with a statistical background, they are highly relevant to MXs target user base: scientists with minimal knowledge of statistical techniques.
+Although the implemented algorithms may seem simplistic to those with a statistical background, they are highly relevant to MXs target user base: scientists with minimal knowledge of statistical techniques who would otherwise be unable to properly analyze their data. As such, MX helps resolves a very important issue, and is the a small step in the process of enabling anyone to use statistical tools to examine their data.
 
 \section{Acknowledgments}
 \label{sec:ack}
