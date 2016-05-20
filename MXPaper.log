@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  19 MAY 2016 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  19 MAY 2016 22:03
 entering extended mode
 **MXPaper.tex
 (MXPaper.tex
@@ -252,21 +252,7 @@ LaTeX Font Info:    ... okay on input line 22.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 40.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
-
-[1
+ [1
 Non-PDF special ignored!
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -275,32 +261,32 @@ Overfull \hbox (1.94235pt too wide) in paragraph at lines 91--92
 []\OT1/cmr/bx/n/12 a 
  []
 
-<Figures/Iris/HeatmapRawnodendro.png, id=17, 596.4684pt x 375.804pt>
+<Figures/Iris/HeatmapRawnodendro.png, id=16, 550.6974pt x 397.485pt>
 File: Figures/Iris/HeatmapRawnodendro.png Graphic file (type png)
 
 <use Figures/Iris/HeatmapRawnodendro.png>
 Package pdftex.def Info: Figures/Iris/HeatmapRawnodendro.png used on input line
  94.
-(pdftex.def)             Requested size: 221.88762pt x 139.80223pt.
+(pdftex.def)             Requested size: 212.6473pt x 153.48404pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 99--100
 []\OT1/cmr/bx/n/12 b 
  []
 
-<Figures/Iris/HeatmapRanksDendro.png, id=19, 596.4684pt x 375.804pt>
+<Figures/Iris/HeatmapRanksDendro.png, id=18, 553.5882pt x 397.485pt>
 File: Figures/Iris/HeatmapRanksDendro.png Graphic file (type png)
 
 <use Figures/Iris/HeatmapRanksDendro.png>
 Package pdftex.def Info: Figures/Iris/HeatmapRanksDendro.png used on input line
  102.
-(pdftex.def)             Requested size: 221.88762pt x 139.80223pt.
+(pdftex.def)             Requested size: 212.6473pt x 152.68344pt.
  [3 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRanksDendro.
 png>]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/bx/n/12 a 
  []
 
-<Figures/Iris/MarginalPetalWidthnocond.png, id=25, 598.3956pt x 241.8636pt>
+<Figures/Iris/MarginalPetalWidthnocond.png, id=24, 598.3956pt x 241.8636pt>
 File: Figures/Iris/MarginalPetalWidthnocond.png Graphic file (type png)
 
 <use Figures/Iris/MarginalPetalWidthnocond.png>
@@ -312,7 +298,7 @@ Overfull \hbox (2.87985pt too wide) in paragraph at lines 131--132
 []\OT1/cmr/bx/n/12 b 
  []
 
-<Figures/Iris/MarginalPetalWidth.png, id=26, 597.9138pt x 241.8636pt>
+<Figures/Iris/MarginalPetalWidth.png, id=25, 597.9138pt x 241.8636pt>
 File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
 
 <use Figures/Iris/MarginalPetalWidth.png>
@@ -321,14 +307,13 @@ Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
 (pdftex.def)             Requested size: 221.88762pt x 89.75385pt.
  [4 <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetal
 Width.png>]
-<Figures/Iris/OutliersIris.png, id=32, 600.8046pt x 238.9728pt>
+<Figures/Iris/OutliersIris.png, id=31, 600.8046pt x 238.9728pt>
 File: Figures/Iris/OutliersIris.png Graphic file (type png)
 
 <use Figures/Iris/OutliersIris.png>
 Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 152.
 (pdftex.def)             Requested size: 439.15508pt x 174.68205pt.
- [5 <./Figures/Iris/OutliersIris.png>]
-[6]
+ [5] [6 <./Figures/Iris/OutliersIris.png>]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 174--175
 []\OT1/cmr/bx/n/12 a 
  []
@@ -350,54 +335,50 @@ File: Figures/Iris/LineColor.png Graphic file (type png)
 <use Figures/Iris/LineColor.png>
 Package pdftex.def Info: Figures/Iris/LineColor.png used on input line 185.
 (pdftex.def)             Requested size: 221.88762pt x 173.55167pt.
- [7 <./Figures/Iris/ScatterColor.png> <./Figures/Iris/LineColor.png>]
+ [7]
 Overfull \hbox (1.94235pt too wide) in paragraph at lines 204--205
 []\OT1/cmr/bx/n/12 a 
  []
 
-<Figures/Iris/EmbedRaw.png, id=50, 571.8966pt x 234.6366pt>
+<Figures/Iris/EmbedRaw.png, id=48, 557.4426pt x 233.673pt>
 File: Figures/Iris/EmbedRaw.png Graphic file (type png)
 
 <use Figures/Iris/EmbedRaw.png>
 Package pdftex.def Info: Figures/Iris/EmbedRaw.png used on input line 207.
-(pdftex.def)             Requested size: 221.88762pt x 91.03531pt.
+(pdftex.def)             Requested size: 221.88762pt x 93.01114pt.
 
 Overfull \hbox (2.87985pt too wide) in paragraph at lines 212--213
 []\OT1/cmr/bx/n/12 b 
  []
 
-<Figures/Iris/EmbedZ.png, id=51, 571.8966pt x 234.6366pt>
+<Figures/Iris/EmbedZ.png, id=49, 556.9608pt x 234.1548pt>
 File: Figures/Iris/EmbedZ.png Graphic file (type png)
 
 <use Figures/Iris/EmbedZ.png>
 Package pdftex.def Info: Figures/Iris/EmbedZ.png used on input line 215.
-(pdftex.def)             Requested size: 221.88762pt x 91.03531pt.
- [8 <./Figures/Iris/EmbedRaw.png> <./Figures/Iris/EmbedZ.png>] [9] (MXPaper.bbl
- [10]) [11] (MXPaper.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
-
- ) 
+(pdftex.def)             Requested size: 221.88762pt x 93.2851pt.
+ [8 <./Figures/Iris/ScatterColor.png> <./Figures/Iris/LineColor.png>] [9 <./Fig
+ures/Iris/EmbedRaw.png> <./Figures/Iris/EmbedZ.png>] (MXPaper.bbl [10]) [11] (M
+XPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 4337 strings out of 493698
- 63657 string characters out of 3144403
- 126965 words of memory out of 3000000
- 7604 multiletter control sequences out of 15000+200000
- 13760 words of font info for 49 fonts, out of 3000000 for 9000
+ 4315 strings out of 493698
+ 63317 string characters out of 3144403
+ 128957 words of memory out of 3000000
+ 7583 multiletter control sequences out of 15000+200000
+ 11768 words of font info for 42 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,9n,75p,1138b,520s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MXPaper.pdf (11 pages, 1330192 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MXPaper.pdf (11 pages, 1356899 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
