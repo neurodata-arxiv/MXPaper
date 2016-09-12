@@ -52,7 +52,7 @@
 
 \bigskip
 \begin{abstract}
-\noindent Exploration and visualization of data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, given the vast array of various statistical tools that have been developed, finding the proper techniques to explore a novel dataset is more of an art than an exact science. Hence, researchers often choose the wrong tools to explore their data, leading to poor analysis. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to analyze uploaded datasets. Within Matrix Explorer we have implemented techniques which we believe are relevant to any sort of data analyses, such as data visualization via heatmaps, scatter/line plots, marginal distributions, and two-dimensional embedding and data exploration via k-means clustering, dendrograms, correlation matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset.
+\noindent Exploration and visualization of data is crucial to driving discovery across a multitude of different basic science fields. Unfortunately, given the vast array of various statistical tools that have been developed, finding the proper techniques to explore a novel dataset is more of an art than an exact science. Hence, researchers often choose the wrong tools to explore their data, leading to poor analysis. In this paper we describe Matrix Explorer, a novel data exploration and visualization web application. The tool allows users to analyze uploaded datasets. Within Matrix Explorer we have implemented techniques which we believe are relevant to any sort of data analyses, such as data visualization via heatmaps, scatter/line plots, marginal distributions, and two-dimensional embedding and data exploration via k-means clustering, dendrograms, correlation matrix computation, and outlier detection. We validated Matrix Explorer by showing that it produces reasonable results for the iris flower dataset. We then used Matrix Explorer to analyze a novel SPECT image dataset.
 \end{abstract}
 
 \noindent%
@@ -64,11 +64,11 @@
 \section{Introduction}
 \label{sec:intro}
 
-The past decade has seen an explosion in scientists' ability to collect huge quantities of data and a simultaneous growth in the necessary computational power and statistical framework to process said data. Unfortunately, despite a multitude of attempts [CITE], exploratory analysis of novel datasets remains more of an art than an exact science, mainly because of the difficulty associated with choosing which of the vast variety of different developed techniques to use. The result of this phenomenon is that the a large quantity of collected data, especially in the basic sciences, is rather poorly analyzed, undoubtedly decreasing the pace of new discoveries.
+John Tukey originally formalized exploratory data analysis through his work in the mid-twentieth century. Although he is perhaps most well known for highlighting the importance of proper analysis, Tukey's brilliance also stemmed from his careful, pragmatic decisions about what sort of analysis to do. This latter fact is perhaps even more important now, half a century later, as statisticians possess a near infinite number of tools to facilitate data analysis, and it is increasingly difficult to choose the optimal subset of techniques to solve a given problem. As a result, despite a multitude of attempts [CITE], exploratory analysis of novel datasets remains more of an art than an exact science. The result of this phenomenon is that a large quantity of collected data, especially in the basic sciences, is either poorly or inefficiently analyzed, undoubtedly decreasing the pace of new discoveries. This overflow of knowledge is not unique to exploratory data analysis. Other fields, most notably clinical medicine, have dealt with this issue by adopting standards of care, often driven by simple checklists. 
 
-What is then required is a framework within which users with minimal statistical knowledge can explore their data. To the best to of our knowledge, such a tool does not yet exist. The R, MATLAB, and Python languages and associated toolboxes and packages still require users to have a non-negligable understanding of underlying methods in order to conduct proper data analysis. Other attempts at decreasing the barrier to entry for quality exploratory data analysis such as GGobi and ViSta, as described in \cite{swayne2003ggobi} and \cite{valero2011using} respectively, have not resolved the issue, requiring a significant learning curve to utilize.
+In light of these facts, we propose that it is necessary to develop a checklist for exploratory data analysis using modern tools. Simultaneously, to maximize efficiency, it is also necessary to develop a code base to simplify these analyses to the point that they can be done without ever writing a line of code. To the best to of our knowledge, such a tool does not yet exist. The R, MATLAB, and Python languages and associated toolboxes and packages still require users to write significant code for even the simplest analysis. Other attempts at making data analysis more efficient, such as GGobi and ViSta, as described in \cite{swayne2003ggobi} and \cite{valero2011using} respectively, have not resolved the issue, requiring a significant learning curve to utilize.
 
-In this paper we describe Matrix Explorer (MX), a novel data exploration web application built via the R Shiny package. Within MX we have included the techniques which we deem nest practice whenever starting a new exploratory analysis task. MX provides users with minimal knowledge of statistics the tools necessary to conduct a basic characterization of their data.
+In this paper we describe Matrix Explorer (MX), our first attempt at developing such a system. MX is a novel data exploration web application built via the R Shiny package. Within MX we have included the techniques which we deem best practice whenever starting a new exploratory analysis task. MX provides users with any level of knowledge of statistics the tools necessary to conduct a basic characterization of their data.
 
 \section{Methods \& Result Validation}
 \label{sec:meth}
@@ -227,10 +227,49 @@ Note that PCA is extremely sensitive to (1) the scaling of the data and to the (
 
 Two-dimensional embedding via PCA for the raw  and z-score normalized iris data after coloring using labels attained via k-means with \textit{k = 3} is shown in Figure~\ref{fig:FigEmbedRaw} and Figure~\ref{fig:FigEmbedZ}, respectively. Note that the k-means clustering result for the z-score normalized data is far worse than the result for the raw data, as it does not indicate the existence of two easily separable clusters. This suggests that the current standard of normalizing to z-scores is not alway optimal. As we have seen above, the cluster that lies far away from the other two is likely composed of samples which belong to the \textit{Iris setosa} class.
 
+\section{Analysis of a Novel SPECT Dataset}
+
+\begin{figure}[t]
+	\centering
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{a}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.48\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Spect_Gender/NonClass_Baseline_Amygdala_L.png}
+		\subcaption{}
+		\label{fig:FigSpecNoClassMarginal}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.01\textwidth}
+		\textbf{b}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.48\textwidth}
+		\includegraphics[width=\textwidth,valign=t]{Figures/Spect_Gender/Baseline_Amygdala_L_Marginal.png}
+		\subcaption{}
+		\label{fig:FigSpecMarginal}
+	\end{subfigure}
+	\vspace{-1.5\baselineskip}
+	\caption{Marginal distribution of the baseline image left amygdala feature with (a) raw data and (b) data stratified by gender. Note that there is visible separation between classes.}
+	\label{fig:FigSpectMarginalCaption}
+\end{figure}
+
+We next used MX to explore a previously unanalyzed SPECT dataset composed of 4,283 individuals. For each individual the data set contained two images, a baseline image which was acquired while the patient was at rest and a concentration image which was acquired while the patient underwent a concentration task [WHICH ONE?]. Both images were converted to a Matrix Explorer friendly format by mapping the resultant SPECT image data onto a standard brain atlas [WHICH ONE?], segmenting the brain into 128 voxels, and computing the average intensity within that voxel. As a result, each patient row in the corresponding dataset has 256 features along with associated patient information. For the purposes of this work, we specifically explored the relationship between the feature columns and the associated patient gender. 
+
+A characteristic feature marginal, showing the distribution of average intensity in the left amygdala in the baseline image, is shown in Figure~\ref{fig:FigSpecNoClassMarginal}. The resultant marginal after conditioning on gender is shown in Figure~\ref{fig:FigSpecMarginal}. Note that some clear separation is visible between the marginals of the two classes. This trend is visible in nearly all the marginals, suggesting that there is a difference in the SPECT images between genders.
+
+We can also gain useful information by examining the robust distances of each patient and examining how these distance relate to their gender. The corresponding figure is shown in Figure~\ref{fig:FigSpecOutlierPlot}. The robust distances for female patients tended to be greater than those for male patients, corroborating the results seen in the feature marginals.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\textwidth,valign=t]{Figures/Spect_Gender/OutlierPlot.png}
+	\caption{Plot of robust distances for all individuals colored based on gender. Note that female patients tend to have a greater distance.}
+	\label{fig:FigSpecOutlierPlot}
+	\hfill
+\end{figure}
+
 \section{Conclusion}
 \label{sec:conc}
 
-We have created MX, a web application driven by the R Shiny package, which allows for basic data exploration and visualization of small to medium sized datasets. Within MX, we have included the tools whose usage we believe to be best practice whenever exploring a new dataset. We have validated the functionality of MX by demonstrating its capability to characterize the iris flower dataset and determine the presence of three different classes. We have then used MX to explore a previously uncharacterized dataset, a collection of SPECT images from over 5000 patients.
+We have created MX, a web application driven by the R Shiny package, which allows for basic data exploration and visualization of small to medium sized datasets. Within MX, we have included the tools whose usage we believe to be best practice whenever exploring a new dataset. We have validated the functionality of MX by demonstrating its capability to characterize the iris flower dataset and determine the presence of three different classes. We have then used MX to explore a previously uncharacterized dataset, a collection of SPECT images from over 4000 patients, and show an interesting association between SPECT image voxel intensities and gender. This latter finding merits further investigation [ADD HERE].
 
 Although the implemented algorithms may seem simplistic to those with a statistical background, they are highly relevant to MXs target user base: scientists with minimal knowledge of statistical techniques who would otherwise be unable to properly analyze their data. As such, MX helps resolves a very important issue, and is the a small step in the process of enabling anyone to use statistical tools to examine their data.
 
