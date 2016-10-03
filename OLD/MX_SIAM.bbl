@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{hardin2012distribution}
+{\sc J.~Hardin and D.~M. Rocke}, {\em The distribution of robust distances},
+  Journal of Computational and Graphical Statistics,  (2012).
+
+\bibitem{hubert2008high}
+{\sc M.~Hubert, P.~J. Rousseeuw, and S.~Van~Aelst}, {\em High-breakdown robust
+  multivariate methods}, Statistical Science,  (2008), pp.~92--119.
+
+\bibitem{maronna2002robust}
+{\sc R.~A. Maronna and R.~H. Zamar}, {\em Robust estimates of location and
+  dispersion for high-dimensional datasets}, Technometrics,  (2002),
+  pp.~307--317.
+
+\bibitem{rousseeuw1999fast}
+{\sc P.~J. Rousseeuw and K.~V. Driessen}, {\em A fast algorithm for the minimum
+  covariance determinant estimator}, Technometrics, 41 (1999), pp.~212--223.
+
+\bibitem{shi2012unsupervised}
+{\sc T.~Shi and S.~Horvath}, {\em Unsupervised learning with random forest
+  predictors}, Journal of Computational and Graphical Statistics,  (2012).
+
+\bibitem{swayne2003ggobi}
+{\sc D.~F. Swayne, D.~T. Lang, A.~Buja, and D.~Cook}, {\em Ggobi: evolving from
+  xgobi into an extensible framework for interactive data visualization},
+  Computational Statistics \& Data Analysis, 43 (2003), pp.~423--444.
+
+\bibitem{valero2011using}
+{\sc P.~M. Valero-Mora and R.~D. Ledesma}, {\em Using interactive graphics to
+  teach multivariate data analysis to psychology students}, Journal of
+  Statistics Education, 19 (2011), pp.~1--19.
+
+\bibitem{van2008visualizing}
+{\sc L.~Van~der Maaten and G.~Hinton}, {\em Visualizing data using t-sne},
+  Journal of Machine Learning Research, 9 (2008), p.~85.
+
+\bibitem{van2009dimensionality}
+{\sc L.~Van Der~Maaten, E.~Postma, and J.~Van~den Herik}, {\em Dimensionality
+  reduction: a comparative}, Journal of Machine Learning Research, 10 (2009),
+  pp.~66--71.
+
+\end{thebibliography}

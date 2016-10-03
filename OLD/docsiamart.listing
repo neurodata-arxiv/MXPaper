@@ -1,0 +1,2 @@
+We can reference multiple types of objects with a single reference:
+\cref{cl:constant,thm:mvt,hyp1,hyp2}.
