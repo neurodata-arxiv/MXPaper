@@ -1,0 +1,414 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.22)  21 NOV 2016 00:04
+entering extended mode
+**MX_Amen.tex
+(MX_Amen.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\leqno.clo"
+File: leqno.clo 1998/08/17 v1.1c Standard LaTeX option (left equation numbers)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (ltexpprt.sty
+*** ACM/SIAM LaTeX2E Preprint Series macro package, version 1.0, September 5, 1
+996 ***
+\outerparskip=\skip43
+\c@@theorem=\count87
+\c@@algorithm=\count88
+\c@lemma=\count89
+\c@fact=\count90
+\c@corollary=\count91
+\c@axiom=\count92
+\c@cond=\count93
+\c@property=\count94
+\c@proposition=\count95
+\c@Conjecture=\count96
+\c@Definition=\count97
+\c@Lemma=\count98
+\c@Remark=\count99
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks15
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count112
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psfrag\psfrag.sty"
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count113
+\pfg@scount=\count114
+\pfg@temp=\write3
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\epsf\epsf.sty"
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen114
+\epsfframethickness=\dimen115
+\epsfrsize=\dimen116
+\epsftmp=\dimen117
+\epsftsize=\dimen118
+\epsfxsize=\dimen119
+\epsfysize=\dimen120
+\pspoints=\dimen121
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@tempdima=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
+)
+\c@ContinuedFloat=\count115
+)
+\c@subfigure=\count116
+\c@subtable=\count117
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
+\@enLab=\toks20
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip47
+\bibsep=\skip48
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count118
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count119
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen129
+\tc@lly=\dimen130
+\tc@urx=\dimen131
+\tc@ury=\dimen132
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen133
+\adjbox@Height=\dimen134
+\adjbox@Depth=\dimen135
+\adjbox@Totalheight=\dimen136
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count120
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count121
+\@vwid@loff=\dimen137
+\@vwid@roff=\dimen138
+)) (MX_Amen.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen139
+\scratchbox=\box30
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen140
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks24
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Overfull \vbox (2.13963pt too high) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<Figures/Iris/HeatmapRawnodendro.png, id=14, 550.6974pt x 397.485pt>
+File: Figures/Iris/HeatmapRawnodendro.png Graphic file (type png)
+
+<use Figures/Iris/HeatmapRawnodendro.png>
+Package pdftex.def Info: Figures/Iris/HeatmapRawnodendro.png used on input line
+ 61.
+(pdftex.def)             Requested size: 226.3233pt x 163.35806pt.
+
+<Figures/Iris/HeatmapRanksDendro.png, id=16, 553.5882pt x 397.485pt>
+File: Figures/Iris/HeatmapRanksDendro.png Graphic file (type png)
+
+<use Figures/Iris/HeatmapRanksDendro.png>
+Package pdftex.def Info: Figures/Iris/HeatmapRanksDendro.png used on input line
+ 66.
+(pdftex.def)             Requested size: 226.3233pt x 162.50288pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<Figures/Iris/MarginalPetalWidthnocond.png, id=17, 598.3956pt x 241.8636pt>
+File: Figures/Iris/MarginalPetalWidthnocond.png Graphic file (type png)
+
+<use Figures/Iris/MarginalPetalWidthnocond.png>
+Package pdftex.def Info: Figures/Iris/MarginalPetalWidthnocond.png used on inpu
+t line 87.
+(pdftex.def)             Requested size: 236.1579pt x 95.45203pt.
+
+<Figures/Iris/MarginalPetalWidth.png, id=18, 597.9138pt x 241.8636pt>
+File: Figures/Iris/MarginalPetalWidth.png Graphic file (type png)
+
+<use Figures/Iris/MarginalPetalWidth.png>
+Package pdftex.def Info: Figures/Iris/MarginalPetalWidth.png used on input line
+ 92.
+(pdftex.def)             Requested size: 236.1579pt x 95.52953pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./Figures/Iris/HeatmapRawnodendro.png> <./Figures/Iris/HeatmapRanksDendro.
+png>]
+<Figures/Iris/OutliersIris.png, id=25, 600.8046pt x 238.9728pt>
+File: Figures/Iris/OutliersIris.png Graphic file (type png)
+
+<use Figures/Iris/OutliersIris.png>
+Package pdftex.def Info: Figures/Iris/OutliersIris.png used on input line 110.
+(pdftex.def)             Requested size: 236.1579pt x 93.93193pt.
+ [3 <./Figures/Iris/MarginalPetalWidthnocond.png> <./Figures/Iris/MarginalPetal
+Width.png> <./Figures/Iris/OutliersIris.png>] <Figures/Iris/ScatterColor.png, i
+d=35, 572.8602pt x 448.074pt>
+File: Figures/Iris/ScatterColor.png Graphic file (type png)
+
+<use Figures/Iris/ScatterColor.png>
+Package pdftex.def Info: Figures/Iris/ScatterColor.png used on input line 132.
+(pdftex.def)             Requested size: 236.1579pt x 184.71657pt.
+
+<Figures/Iris/LineColor.png, id=36, 572.8602pt x 448.074pt>
+File: Figures/Iris/LineColor.png Graphic file (type png)
+
+<use Figures/Iris/LineColor.png>
+Package pdftex.def Info: Figures/Iris/LineColor.png used on input line 137.
+(pdftex.def)             Requested size: 236.1579pt x 184.71657pt.
+
+<Figures/Iris/EmbedRaw.png, id=37, 557.4426pt x 233.673pt>
+File: Figures/Iris/EmbedRaw.png Graphic file (type png)
+
+<use Figures/Iris/EmbedRaw.png>
+Package pdftex.def Info: Figures/Iris/EmbedRaw.png used on input line 156.
+(pdftex.def)             Requested size: 236.1579pt x 98.99416pt.
+
+<Figures/Iris/EmbedZ.png, id=38, 556.9608pt x 234.1548pt>
+File: Figures/Iris/EmbedZ.png Graphic file (type png)
+
+<use Figures/Iris/EmbedZ.png>
+Package pdftex.def Info: Figures/Iris/EmbedZ.png used on input line 161.
+(pdftex.def)             Requested size: 236.1579pt x 99.28401pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./Figures/Iris/ScatterColor.png> <./Figures/Iris/LineColor.png>]
+Underfull \vbox (badness 3792) has occurred while \output is active []
+
+
+<Figures/Spect_Gender/NonClass_Baseline_Amygdala_L.png, id=44, 1151.80313pt x 4
+05.38953pt>
+File: Figures/Spect_Gender/NonClass_Baseline_Amygdala_L.png Graphic file (type 
+png)
+ <use Figures/Spect_Gender/NonClass_Baseline_Amygdala_L.png>
+Package pdftex.def Info: Figures/Spect_Gender/NonClass_Baseline_Amygdala_L.png 
+used on input line 181.
+(pdftex.def)             Requested size: 236.1579pt x 83.11775pt.
+
+<Figures/Spect_Gender/Baseline_Amygdala_L_Marginal.png, id=45, 1151.80313pt x 4
+05.38953pt>
+File: Figures/Spect_Gender/Baseline_Amygdala_L_Marginal.png Graphic file (type 
+png)
+ <use Figures/Spect_Gender/Baseline_Amygdala_L_Marginal.png>
+Package pdftex.def Info: Figures/Spect_Gender/Baseline_Amygdala_L_Marginal.png 
+used on input line 186.
+(pdftex.def)             Requested size: 236.1579pt x 83.11775pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./Figures/Iris/EmbedRaw.png> <./Figures/Iris/EmbedZ.png> <./Figures/Spect_
+Gender/NonClass_Baseline_Amygdala_L.png (PNG copy)> <./Figures/Spect_Gender/Bas
+eline_Amygdala_L_Marginal.png (PNG copy)>]
+<Figures/Spect_Gender/OutlierPlot.png, id=51, 1151.80313pt x 405.38953pt>
+File: Figures/Spect_Gender/OutlierPlot.png Graphic file (type png)
+
+<use Figures/Spect_Gender/OutlierPlot.png>
+Package pdftex.def Info: Figures/Spect_Gender/OutlierPlot.png used on input lin
+e 203.
+(pdftex.def)             Requested size: 236.1579pt x 83.11775pt.
+ (MX_Amen.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [6 <./Figures/Spect_Gender/OutlierPlot.png (PNG copy)>] (MX_Amen.aux) ) 
+Here is how much of TeX's memory you used:
+ 4313 strings out of 493698
+ 63709 string characters out of 3144403
+ 131908 words of memory out of 3000000
+ 7580 multiletter control sequences out of 15000+200000
+ 9896 words of font info for 36 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 42i,14n,75p,1368b,512s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmti10.pfb>
+Output written on MX_Amen.pdf (6 pages, 1484011 bytes).
+PDF statistics:
+ 95 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
